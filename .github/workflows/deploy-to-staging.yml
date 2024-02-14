@@ -4,12 +4,10 @@ on:
   push:
     branches:
       - develop
-  workflow_dispatch:
+  repository_dispatch:
+    types: rebuild-staging
   #schedule:
   #  - cron: '10 0 * * *'
-
-permissions:
-  contents: write
 
 jobs:
   build:
