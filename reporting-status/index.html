@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="de" class="no-js">
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://dialogfassungdns.github.io/data/en',
+  remoteDataBaseUrl: 'https://dialogfassungdns.github.io/data/de',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -42,7 +42,7 @@ var opensdg = {
   // Disaggregations which should be ignored on indicator pages.
   ignoredDisaggregations: null,
 
-  language: 'en',
+  language: 'de',
 
   mapColors: {
     "default": [
@@ -117,7 +117,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Reporting status - Dialogfassung</title>
+    <title>Berichtsstatus - Indikatoren der Deutschen Nachhaltigkeitsstrategie</title>
 
 
 
@@ -135,13 +135,15 @@ var translations = {
 <link rel="icon" type="image/x-icon" href="/site/assets/img/favicons/favicon.ico" />
 
         
+        <link rel="manifest" href="/site/manifest.json">
+        
 
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240214101336">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240214105304">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -162,25 +164,25 @@ var translations = {
         
 
     </head>
-<body class="language-en
+<body class="language-de
 layout-reportingstatus
 ">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_contacts.suggestions\">feedback</a>.","enable_high_contrast":"Enable high contrast","hide_menu":"Hide navigation menu","high_contrast":"High contrast","internet_explorer_message":"We have detected that you are using Internet Explorer to visit this website. Internet Explorer is now being phased out by Microsoft. As a result, this website no longer supports any version of Internet Explorer. Some features on this site will not work. You should use a modern browser such as Edge, Chrome, Firefox, or Safari. If you have difficulty installing or accessing a different browser, please contact your IT support team.","internet_explorer_message_title":"This internet browser is no longer supported","logo_title":"Go to homepage","show_menu":"Show navigation menu","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
+<script>translations['header'] = {"alpha":"Alpha-Version","beta":"Beta-Version","disclaimer":"Diese Seite befindet sich im Entwicklungsstadium. Wir freuen uns über Ihre <a href=\"mailto:%email_contacts.suggestions\">Kommentare</a>.","internet_explorer_message":"Wir haben festgestellt, dass Sie den Internet Explorer verwenden, um diese Website zu besuchen. Der Internet Explorer wird von Microsoft nicht mehr unterstützt. Aus diesem Grund hat diese Website ebenfalls die Unterstützung für alle Versionen des Internet Explorers eingestellt, einige Bereiche auf dieser Website werden daher nicht oder nur eingeschränkt funktionieren. Bitte verwenden Sie einen modernen Browser wie Edge, Chrome, Firefox oder Safari.","internet_explorer_message_title":"Dieser Internet-Browser wird nicht mehr unterstützt","skip_link":" Zum Hauptinhalt springen","tag_line":""};</script>
 
-<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0"> Zum Hauptinhalt springen</a>
 <div class="container internet-explorer-message">
-    <h2 class="internet-explorer-message-title">This internet browser is no longer supported</h2>
-    <p class="internet-explorer-message-body">We have detected that you are using Internet Explorer to visit this website. Internet Explorer is now being phased out by Microsoft. As a result, this website no longer supports any version of Internet Explorer. Some features on this site will not work. You should use a modern browser such as Edge, Chrome, Firefox, or Safari. If you have difficulty installing or accessing a different browser, please contact your IT support team.</p>
+    <h2 class="internet-explorer-message-title">Dieser Internet-Browser wird nicht mehr unterstützt</h2>
+    <p class="internet-explorer-message-body">Wir haben festgestellt, dass Sie den Internet Explorer verwenden, um diese Website zu besuchen. Der Internet Explorer wird von Microsoft nicht mehr unterstützt. Aus diesem Grund hat diese Website ebenfalls die Unterstützung für alle Versionen des Internet Explorers eingestellt, einige Bereiche auf dieser Website werden daher nicht oder nur eingeschränkt funktionieren. Bitte verwenden Sie einen modernen Browser wie Edge, Chrome, Firefox oder Safari.</p>
 </div>
 <div id="disclaimer">
     
 <div class="container">
   <div class="disclaimer-alert">
-    <strong class="phase-tag">Alpha</strong>
+    <strong class="phase-tag">beta</strong>
     
-    This is a development website. We welcome your <a href="mailto:test@example.com">feedback</a>.
+    Diese Seite befindet sich im Entwicklungsstadium. Wir freuen uns über Ihre <a href="mailto:dns-indikatoren@destatis.de">Kommentare</a>.
     
   </div>
 </div>
@@ -190,36 +192,84 @@ layout-reportingstatus
 <header role="banner" class="">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
-            <a class="navbar-brand" href="/site/" id="home" aria-label="Go to homepage" title="Go to homepage">
-    <img src="/site/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+            <a class="navbar-brand" href="/site/" id="home" aria-label="" title="">
+    <img src="/site/assets/img/de/DNS_logo.png" alt="DESTATIS - Deutsche Nachhaltikeitsstrategie" />
 </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Show navigation menu">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="d-flex flex-wrap w-100 justify-content-between">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav" id="menu"><li class="nav-item ">
-    <a class="nav-link" href="/site/">Home</a>
-</li><li class="nav-item ">
-    <a class="nav-link" href="/site/goals">Goals</a>
-</li><li class="nav-item active">
-    <a class="nav-link" href="/site/reporting-status">Reporting Status</a>
-</li><li class="nav-item ">
-    <a class="nav-link" href="/site/news">Updates</a>
-</li><li class="nav-item ">
-    <a class="nav-link" href="/site/faq">FAQ</a>
-</li><li class="nav-item ">
-    <a class="nav-link" href="/site/about">About</a>
-</li></ul>
-    
+                    
+
+
+<ul class="navbar-nav" id="menu"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-menu-1-start" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Start
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-menu-1-start"><li class=" ">
+    <a class="dropdown-item" href="/site/">Nationale Indikatoren <img class="link_btn" src="https://sdg-indikatoren.de/public/DNS Wheel.png" title="Klicken Sie hier um zur Seite der DNS Indikatoren zu gelangen" alt="Link DNS" style="width:24px;height:24px;"/></a>
+</li>
+<li class=" ">
+    <a class="dropdown-item" href="https://sdg-indikatoren.de">Globale Indikatoren <img class="link_btn" src="https://sdg-indikatoren.de/public/SDG Wheel_Transparent.png" title="Klicken Sie hier um zur Seite der SDG Indikatoren zu gelangen" alt="Link SDG" style="width:24px;height:24px;"/></a>
+</li>
+</ul>
+          </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-menu-1-about" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Themen
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-menu-1-about"><li>
+                      <a class="dropdown-item dropdown-toggle" href="#">
+                          Deutsche Nachhaltigkeitsstrategie (DNS)
+                      </a>
+                      <ul class="submenu dropdown-menu"><li><a class="dropdown-item" href="https://nachhaltige-entwicklung-deutschland.github.io/open-sdg-site-starter/about/dns/monitoring/">Monitoring</a></li><li><a class="dropdown-item" href="https://nachhaltige-entwicklung-deutschland.github.io/open-sdg-site-starter/about/dns/publications/">Publikationen</a></li></ul>
+                    </li><li>
+                      <a class="dropdown-item dropdown-toggle" href="#">
+                          Agenda 2030 (SDG)
+                      </a>
+                      <ul class="submenu dropdown-menu"><li><a class="dropdown-item" href="https://sdg-indikatoren.de/about/sdg/monitoring">Monitoring</a></li><li><a class="dropdown-item" href="https://sdg-indikatoren.de/about/sdg/publications">Publikationen</a></li></ul>
+                    </li></ul>
+          </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-menu-1-status" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Status
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-menu-1-status"><li class=" ">
+    <a class="dropdown-item" href="/site/status/">Methodik</a>
+</li>
+<li class=" ">
+    <a class="dropdown-item" href="/site/status_summary/">Übersicht</a>
+</li>
+</ul>
+          </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-menu-1-strategy" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Nachhaltigkeitsstrategie
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-menu-1-strategy"><li class=" ">
+    <a class="dropdown-item" href="/site/strategy/federal_government/">Bundesregierung</a>
+</li>
+<li class=" ">
+    <a class="dropdown-item" href="/site/strategy/laender/">Bundesländer</a>
+</li>
+</ul>
+          </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-menu-1-help" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Hilfe
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-menu-1-help"><li class=" ">
+    <a class="dropdown-item" href="/site/help/navigation/">Aufbau der Online Plattform</a>
+</li>
+<li class=" ">
+    <a class="dropdown-item" href="/site/help/guidance/">Technische Hinweise</a>
+</li>
+<li class=" ">
+    <a class="dropdown-item" href="/site/help/faq/">FAQ</a>
+</li>
+</ul>
+          </li></ul>
+
                 </div>
                 <div class="header-search-bar">
                     <form class="align-self-lg-end" id="search" action="/site/search/">
     <div class="input-group">
-        <label class="visually-hidden" for="indicator_search">Search</label>
-        <input class="form-control" type="search" name="q" id="indicator_search" title="Search">
+        <label class="visually-hidden" for="indicator_search">Suche</label>
+        <input class="form-control" type="search" name="q" id="indicator_search" title="Suche">
         <span class="input-group-append">
-            <button class="btn btn-outline-secondary ms-n5" aria-label="Site search" id="search-btn" type="submit">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="" id="search-btn" type="submit">
                 <i class="fa fa-search"></i>
             </button>
         </span>
@@ -227,42 +277,13 @@ layout-reportingstatus
 </form>
 
                 </div>
-                <div class="header-toggles d-flex">
-
-
-
-
-
-  <div class="language-toggle-container">
-  
-  <div class="btn-group language-toggle-dropdown  dropdown">
-    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="fa fa-globe"></i>
-      English
-    </button>
-    <ul class="dropdown-menu"><li>
-            <a class="dropdown-item" href="/site/es/reporting-status/">
-              Español
-            </a>
-          </li></ul>
-  </div>
-</div>
-
-
-
-                    <span class="no-js-language-toggle"><div class="language-toggle-container d-flex">
-    <i class="fa fa-globe language-toggle-globe-links"></i>
-    <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-es list-inline-item">
-            <a class="language-toggle-link" href="/site/es/reporting-status/">
-                Español
-            </a>
-        </li></ul>
-</div></span><a title="Enable high contrast" aria-label="Enable high contrast"
+                <div class="header-toggles d-flex"><a title="" aria-label=""
     data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
 data-event-category="Accessibility"
 data-event-action="Change contrast setting"
 data-event-label="high"
 >A</a>
+
                 </div>
             </div>
         </nav>
@@ -282,9 +303,9 @@ data-event-label="high"
   <nav>
     <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
         <li class="breadcrumb-item" >
-            <a href="/site/">Home</a>
+            <a href="/site/">Start</a>
         </li>
-        <li class="breadcrumb-item active">Reporting status</li>
+        <li class="breadcrumb-item active">Berichtsstatus</li>
     </ol>
 </nav>
 </div>
@@ -292,15 +313,10 @@ data-event-label="high"
 
   <h1>
   
-    Reporting status
+    Berichtsstatus
   
 </h1>
 
-
-<div class="reporting-status-description">
-  <p>Reporting status provides an overview of how much Sustainable Development Goal (SDG) data Australia reports.</p>
-
-</div>
 
 
 
@@ -311,25 +327,21 @@ data-event-label="high"
   <div class="goal goal-overall">
     
     <div class="frame goal-tiles">
-        <img src="/site/assets/img/SDG Wheel_Transparent-01.png" alt="Sustainable Development Goals" width="100" height="100" class="goal-icon-image goal-icon-image-"/>
+        <img src="/site/assets/img/SDG Wheel_Transparent-01.png" alt="Ziele für Nachhaltige Entwicklung" width="100" height="100" class="goal-icon-image goal-icon-image-"/>
     </div>
     
     <div class="details">
         <h2 class="status-goal">
-            Overall reporting status
+            Übersicht zum Berichtsstatus der
         </h2>
-        <span class="total"><span>248</span> indicators</span>
+        <span class="total"><span>60</span> indikatoren</span>
         <div class="summary">
             <div class="statuses">
             
             <div>
-                <span class="status notstarted"><span class="status-inner">247</span></span><strong>No data available</strong><span class="value">100%</span>
+                <span class="status complete"><span class="status-inner">60</span></span><strong>complete</strong><span class="value">100%</span>
             </div>
             
-            
-            <div>
-                <span class="status complete"><span class="status-inner">1</span></span><strong>Reported online</strong><span class="value">0%</span>
-            </div>
             
             <br style="clear:both;">
             </div>
@@ -339,40 +351,31 @@ data-event-label="high"
             
             
             
-            <span class="notstarted" style="width:99.59677419354838%" title="No data available: 100%"></span>
+            <span class="complete" style="width:100.0%" title="complete: 100%"></span>
             
-            
-            
-            
-            
-            <span class="complete" style="width:0.4032258064516129%" title="Reported online: 0%"></span>
             
             </div>
     </div>
     <br style="clear:both;">
 </div>
-  <h2>Status by goal</h2><div class="goal reporting-status-item">
+  <h2>Status nach Ziel</h2><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/site/1/" title="View targets and indicators for Goal 1" aria-label="View targets and indicators for Goal 1">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/1.png" alt="No poverty - Goal 1" width="100" height="100" class="goal-icon-1 goal-icon-image goal-icon-image-"/>
+        <a href="/site/1/" title=" 1" aria-label=" 1">
+        <img src="https://sdg-indikatoren.de/assets/img/goals/dns/de/1.png" alt="Keine Armut - Ziel 1" width="100" height="100" class="goal-icon-1 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/site/1/">No poverty</a>
+            <a href="/site/1/">Keine Armut</a>
         </h3>
-        <span class="total">13 indicators</span>
+        <span class="total">1 indikatoren</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">12</span></span><strong>No data available</strong><span class="value">92%</span>
+                    <span class="status complete"><span class="status-inner">1</span></span><strong>complete</strong><span class="value">100%</span>
                 </div>
                 
-                
-                <div>
-                    <span class="status complete"><span class="status-inner">1</span></span><strong>Reported online</strong><span class="value">8%</span>
-                </div>
                 
                 <br style="clear:both;">
             </div>
@@ -382,13 +385,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:92.3076923076923%" title="No data available: 92%"></span>
+                <span class="complete" style="width:100.0%" title="complete: 100%"></span>
                 
-                
-                
-                
-                
-                <span class="complete" style="width:7.692307692307693%" title="Reported online: 8%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -396,26 +394,22 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/site/2/" title="View targets and indicators for Goal 2" aria-label="View targets and indicators for Goal 2">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/2.png" alt="Zero hunger - Goal 2" width="100" height="100" class="goal-icon-2 goal-icon-image goal-icon-image-"/>
+        <a href="/site/2/" title=" 2" aria-label=" 2">
+        <img src="https://sdg-indikatoren.de/assets/img/goals/dns/de/2.png" alt="Kein Hunger - Ziel 2" width="100" height="100" class="goal-icon-2 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/site/2/">Zero hunger</a>
+            <a href="/site/2/">Kein Hunger</a>
         </h3>
-        <span class="total">14 indicators</span>
+        <span class="total">3 indikatoren</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status complete"><span class="status-inner">3</span></span><strong>complete</strong><span class="value">100%</span>
                 </div>
                 
-                
-                <div>
-                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
-                </div>
                 
                 <br style="clear:both;">
             </div>
@@ -425,13 +419,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                <span class="complete" style="width:100.0%" title="complete: 100%"></span>
                 
-                
-                
-                
-                
-                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -439,26 +428,22 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/site/3/" title="View targets and indicators for Goal 3" aria-label="View targets and indicators for Goal 3">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/3.png" alt="Good health and well-being - Goal 3" width="100" height="100" class="goal-icon-3 goal-icon-image goal-icon-image-"/>
+        <a href="/site/3/" title=" 3" aria-label=" 3">
+        <img src="https://sdg-indikatoren.de/assets/img/goals/dns/de/3.png" alt="Gesundheit und Wohlergehen - Ziel 3" width="100" height="100" class="goal-icon-3 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/site/3/">Good health and well-being</a>
+            <a href="/site/3/">Gesundheit und Wohlergehen</a>
         </h3>
-        <span class="total">28 indicators</span>
+        <span class="total">7 indikatoren</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">28</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status complete"><span class="status-inner">7</span></span><strong>complete</strong><span class="value">100%</span>
                 </div>
                 
-                
-                <div>
-                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
-                </div>
                 
                 <br style="clear:both;">
             </div>
@@ -468,13 +453,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                <span class="complete" style="width:100.0%" title="complete: 100%"></span>
                 
-                
-                
-                
-                
-                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -482,26 +462,22 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/site/4/" title="View targets and indicators for Goal 4" aria-label="View targets and indicators for Goal 4">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/4.png" alt="Quality education - Goal 4" width="100" height="100" class="goal-icon-4 goal-icon-image goal-icon-image-"/>
+        <a href="/site/4/" title=" 4" aria-label=" 4">
+        <img src="https://sdg-indikatoren.de/assets/img/goals/dns/de/4.png" alt="Hochwertige Bildung - Ziel 4" width="100" height="100" class="goal-icon-4 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/site/4/">Quality education</a>
+            <a href="/site/4/">Hochwertige Bildung</a>
         </h3>
-        <span class="total">12 indicators</span>
+        <span class="total">3 indikatoren</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">12</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status complete"><span class="status-inner">3</span></span><strong>complete</strong><span class="value">100%</span>
                 </div>
                 
-                
-                <div>
-                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
-                </div>
                 
                 <br style="clear:both;">
             </div>
@@ -511,13 +487,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                <span class="complete" style="width:100.0%" title="complete: 100%"></span>
                 
-                
-                
-                
-                
-                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -525,26 +496,22 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/site/5/" title="View targets and indicators for Goal 5" aria-label="View targets and indicators for Goal 5">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/5.png" alt="Gender equality - Goal 5" width="100" height="100" class="goal-icon-5 goal-icon-image goal-icon-image-"/>
+        <a href="/site/5/" title=" 5" aria-label=" 5">
+        <img src="https://sdg-indikatoren.de/assets/img/goals/dns/de/5.png" alt="Geschlechtergleichheit - Ziel 5" width="100" height="100" class="goal-icon-5 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/site/5/">Gender equality</a>
+            <a href="/site/5/">Geschlechtergleichheit</a>
         </h3>
-        <span class="total">14 indicators</span>
+        <span class="total">4 indikatoren</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status complete"><span class="status-inner">4</span></span><strong>complete</strong><span class="value">100%</span>
                 </div>
                 
-                
-                <div>
-                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
-                </div>
                 
                 <br style="clear:both;">
             </div>
@@ -554,13 +521,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                <span class="complete" style="width:100.0%" title="complete: 100%"></span>
                 
-                
-                
-                
-                
-                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -568,26 +530,22 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/site/6/" title="View targets and indicators for Goal 6" aria-label="View targets and indicators for Goal 6">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/6.png" alt="Clean water and sanitation - Goal 6" width="100" height="100" class="goal-icon-6 goal-icon-image goal-icon-image-"/>
+        <a href="/site/6/" title=" 6" aria-label=" 6">
+        <img src="https://sdg-indikatoren.de/assets/img/goals/dns/de/6.png" alt="Sauberes Wasser und Sanitäreinrichtungen - Ziel 6" width="100" height="100" class="goal-icon-6 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/site/6/">Clean water and sanitation</a>
+            <a href="/site/6/">Sauberes Wasser und Sanitäreinrichtungen</a>
         </h3>
-        <span class="total">11 indicators</span>
+        <span class="total">3 indikatoren</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">11</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status complete"><span class="status-inner">3</span></span><strong>complete</strong><span class="value">100%</span>
                 </div>
                 
-                
-                <div>
-                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
-                </div>
                 
                 <br style="clear:both;">
             </div>
@@ -597,13 +555,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                <span class="complete" style="width:100.0%" title="complete: 100%"></span>
                 
-                
-                
-                
-                
-                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -611,26 +564,22 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/site/7/" title="View targets and indicators for Goal 7" aria-label="View targets and indicators for Goal 7">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/7.png" alt="Affordable and clean energy - Goal 7" width="100" height="100" class="goal-icon-7 goal-icon-image goal-icon-image-"/>
+        <a href="/site/7/" title=" 7" aria-label=" 7">
+        <img src="https://sdg-indikatoren.de/assets/img/goals/dns/de/7.png" alt="Bezahlbare und saubere Energie - Ziel 7" width="100" height="100" class="goal-icon-7 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/site/7/">Affordable and clean energy</a>
+            <a href="/site/7/">Bezahlbare und saubere Energie</a>
         </h3>
-        <span class="total">6 indicators</span>
+        <span class="total">3 indikatoren</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">6</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status complete"><span class="status-inner">3</span></span><strong>complete</strong><span class="value">100%</span>
                 </div>
                 
-                
-                <div>
-                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
-                </div>
                 
                 <br style="clear:both;">
             </div>
@@ -640,13 +589,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                <span class="complete" style="width:100.0%" title="complete: 100%"></span>
                 
-                
-                
-                
-                
-                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -654,26 +598,22 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/site/8/" title="View targets and indicators for Goal 8" aria-label="View targets and indicators for Goal 8">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/8.png" alt="Decent work and economic growth - Goal 8" width="100" height="100" class="goal-icon-8 goal-icon-image goal-icon-image-"/>
+        <a href="/site/8/" title=" 8" aria-label=" 8">
+        <img src="https://sdg-indikatoren.de/assets/img/goals/dns/de/8.png" alt="Menschenwürdige Arbeit und Wirtschaftswachstum - Ziel 8" width="100" height="100" class="goal-icon-8 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/site/8/">Decent work and economic growth</a>
+            <a href="/site/8/">Menschenwürdige Arbeit und Wirtschaftswachstum</a>
         </h3>
-        <span class="total">16 indicators</span>
+        <span class="total">7 indikatoren</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">16</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status complete"><span class="status-inner">7</span></span><strong>complete</strong><span class="value">100%</span>
                 </div>
                 
-                
-                <div>
-                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
-                </div>
                 
                 <br style="clear:both;">
             </div>
@@ -683,13 +623,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                <span class="complete" style="width:100.0%" title="complete: 100%"></span>
                 
-                
-                
-                
-                
-                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -697,26 +632,22 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/site/9/" title="View targets and indicators for Goal 9" aria-label="View targets and indicators for Goal 9">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/9.png" alt="Industry, innovation and infrastructure - Goal 9" width="100" height="100" class="goal-icon-9 goal-icon-image goal-icon-image-"/>
+        <a href="/site/9/" title=" 9" aria-label=" 9">
+        <img src="https://sdg-indikatoren.de/assets/img/goals/dns/de/9.png" alt="Industrie, Innovationen und Infrastruktur - Ziel 9" width="100" height="100" class="goal-icon-9 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/site/9/">Industry, innovation and infrastructure</a>
+            <a href="/site/9/">Industrie, Innovationen und Infrastruktur</a>
         </h3>
-        <span class="total">12 indicators</span>
+        <span class="total">2 indikatoren</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">12</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status complete"><span class="status-inner">2</span></span><strong>complete</strong><span class="value">100%</span>
                 </div>
                 
-                
-                <div>
-                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
-                </div>
                 
                 <br style="clear:both;">
             </div>
@@ -726,13 +657,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                <span class="complete" style="width:100.0%" title="complete: 100%"></span>
                 
-                
-                
-                
-                
-                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -740,26 +666,22 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/site/10/" title="View targets and indicators for Goal 10" aria-label="View targets and indicators for Goal 10">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/10.png" alt="Reduced inequalities - Goal 10" width="100" height="100" class="goal-icon-10 goal-icon-image goal-icon-image-"/>
+        <a href="/site/10/" title=" 10" aria-label=" 10">
+        <img src="https://sdg-indikatoren.de/assets/img/goals/dns/de/10.png" alt="Weniger Ungleichheiten - Ziel 10" width="100" height="100" class="goal-icon-10 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/site/10/">Reduced inequalities</a>
+            <a href="/site/10/">Weniger Ungleichheiten</a>
         </h3>
-        <span class="total">14 indicators</span>
+        <span class="total">2 indikatoren</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status complete"><span class="status-inner">2</span></span><strong>complete</strong><span class="value">100%</span>
                 </div>
                 
-                
-                <div>
-                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
-                </div>
                 
                 <br style="clear:both;">
             </div>
@@ -769,13 +691,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                <span class="complete" style="width:100.0%" title="complete: 100%"></span>
                 
-                
-                
-                
-                
-                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -783,26 +700,22 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/site/11/" title="View targets and indicators for Goal 11" aria-label="View targets and indicators for Goal 11">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/11.png" alt="Sustainable cities and communities - Goal 11" width="100" height="100" class="goal-icon-11 goal-icon-image goal-icon-image-"/>
+        <a href="/site/11/" title=" 11" aria-label=" 11">
+        <img src="https://sdg-indikatoren.de/assets/img/goals/dns/de/11.png" alt="Nachhaltige Städte und Gemeinden - Ziel 11" width="100" height="100" class="goal-icon-11 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/site/11/">Sustainable cities and communities</a>
+            <a href="/site/11/">Nachhaltige Städte und Gemeinden</a>
         </h3>
-        <span class="total">15 indicators</span>
+        <span class="total">8 indikatoren</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">15</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status complete"><span class="status-inner">8</span></span><strong>complete</strong><span class="value">100%</span>
                 </div>
                 
-                
-                <div>
-                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
-                </div>
                 
                 <br style="clear:both;">
             </div>
@@ -812,13 +725,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                <span class="complete" style="width:100.0%" title="complete: 100%"></span>
                 
-                
-                
-                
-                
-                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -826,26 +734,22 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/site/12/" title="View targets and indicators for Goal 12" aria-label="View targets and indicators for Goal 12">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/12.png" alt="Responsible consumption and production - Goal 12" width="100" height="100" class="goal-icon-12 goal-icon-image goal-icon-image-"/>
+        <a href="/site/12/" title=" 12" aria-label=" 12">
+        <img src="https://sdg-indikatoren.de/assets/img/goals/dns/de/12.png" alt="Nachhaltige/r Konsum und Produktion - Ziel 12" width="100" height="100" class="goal-icon-12 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/site/12/">Responsible consumption and production</a>
+            <a href="/site/12/">Nachhaltige/r Konsum und Produktion</a>
         </h3>
-        <span class="total">13 indicators</span>
+        <span class="total">4 indikatoren</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">13</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status complete"><span class="status-inner">4</span></span><strong>complete</strong><span class="value">100%</span>
                 </div>
                 
-                
-                <div>
-                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
-                </div>
                 
                 <br style="clear:both;">
             </div>
@@ -855,13 +759,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                <span class="complete" style="width:100.0%" title="complete: 100%"></span>
                 
-                
-                
-                
-                
-                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -869,26 +768,22 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/site/13/" title="View targets and indicators for Goal 13" aria-label="View targets and indicators for Goal 13">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/13.png" alt="Climate action - Goal 13" width="100" height="100" class="goal-icon-13 goal-icon-image goal-icon-image-"/>
+        <a href="/site/13/" title=" 13" aria-label=" 13">
+        <img src="https://sdg-indikatoren.de/assets/img/goals/dns/de/13.png" alt="Maßnahmen zum Klimaschutz - Ziel 13" width="100" height="100" class="goal-icon-13 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/site/13/">Climate action</a>
+            <a href="/site/13/">Maßnahmen zum Klimaschutz</a>
         </h3>
-        <span class="total">8 indicators</span>
+        <span class="total">2 indikatoren</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">8</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status complete"><span class="status-inner">2</span></span><strong>complete</strong><span class="value">100%</span>
                 </div>
                 
-                
-                <div>
-                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
-                </div>
                 
                 <br style="clear:both;">
             </div>
@@ -898,13 +793,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                <span class="complete" style="width:100.0%" title="complete: 100%"></span>
                 
-                
-                
-                
-                
-                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -912,26 +802,22 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/site/14/" title="View targets and indicators for Goal 14" aria-label="View targets and indicators for Goal 14">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/14.png" alt="Life below water - Goal 14" width="100" height="100" class="goal-icon-14 goal-icon-image goal-icon-image-"/>
+        <a href="/site/14/" title=" 14" aria-label=" 14">
+        <img src="https://sdg-indikatoren.de/assets/img/goals/dns/de/14.png" alt="Leben unter Wasser - Ziel 14" width="100" height="100" class="goal-icon-14 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/site/14/">Life below water</a>
+            <a href="/site/14/">Leben unter Wasser</a>
         </h3>
-        <span class="total">10 indicators</span>
+        <span class="total">2 indikatoren</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">10</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status complete"><span class="status-inner">2</span></span><strong>complete</strong><span class="value">100%</span>
                 </div>
                 
-                
-                <div>
-                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
-                </div>
                 
                 <br style="clear:both;">
             </div>
@@ -941,13 +827,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                <span class="complete" style="width:100.0%" title="complete: 100%"></span>
                 
-                
-                
-                
-                
-                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -955,26 +836,22 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/site/15/" title="View targets and indicators for Goal 15" aria-label="View targets and indicators for Goal 15">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/15.png" alt="Life on land - Goal 15" width="100" height="100" class="goal-icon-15 goal-icon-image goal-icon-image-"/>
+        <a href="/site/15/" title=" 15" aria-label=" 15">
+        <img src="https://sdg-indikatoren.de/assets/img/goals/dns/de/15.png" alt="Leben an Land - Ziel 15" width="100" height="100" class="goal-icon-15 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/site/15/">Life on land</a>
+            <a href="/site/15/">Leben an Land</a>
         </h3>
-        <span class="total">14 indicators</span>
+        <span class="total">3 indikatoren</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status complete"><span class="status-inner">3</span></span><strong>complete</strong><span class="value">100%</span>
                 </div>
                 
-                
-                <div>
-                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
-                </div>
                 
                 <br style="clear:both;">
             </div>
@@ -984,13 +861,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                <span class="complete" style="width:100.0%" title="complete: 100%"></span>
                 
-                
-                
-                
-                
-                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -998,26 +870,22 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/site/16/" title="View targets and indicators for Goal 16" aria-label="View targets and indicators for Goal 16">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/16.png" alt="Peace, justice and strong institutions - Goal 16" width="100" height="100" class="goal-icon-16 goal-icon-image goal-icon-image-"/>
+        <a href="/site/16/" title=" 16" aria-label=" 16">
+        <img src="https://sdg-indikatoren.de/assets/img/goals/dns/de/16.png" alt="Frieden, Gerechtigkeit und starke Institutionen - Ziel 16" width="100" height="100" class="goal-icon-16 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/site/16/">Peace, justice and strong institutions</a>
+            <a href="/site/16/">Frieden, Gerechtigkeit und starke Institutionen</a>
         </h3>
-        <span class="total">24 indicators</span>
+        <span class="total">3 indikatoren</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">24</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status complete"><span class="status-inner">3</span></span><strong>complete</strong><span class="value">100%</span>
                 </div>
                 
-                
-                <div>
-                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
-                </div>
                 
                 <br style="clear:both;">
             </div>
@@ -1027,13 +895,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                <span class="complete" style="width:100.0%" title="complete: 100%"></span>
                 
-                
-                
-                
-                
-                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -1041,26 +904,22 @@ data-event-label="high"
     <br style="clear:both;">
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
-        <a href="/site/17/" title="View targets and indicators for Goal 17" aria-label="View targets and indicators for Goal 17">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/17.png" alt="Partnerships for the goals - Goal 17" width="100" height="100" class="goal-icon-17 goal-icon-image goal-icon-image-"/>
+        <a href="/site/17/" title=" 17" aria-label=" 17">
+        <img src="https://sdg-indikatoren.de/assets/img/goals/dns/de/17.png" alt="Partnerschaften zur Erreichung der Ziele - Ziel 17" width="100" height="100" class="goal-icon-17 goal-icon-image goal-icon-image-"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/site/17/">Partnerships for the goals</a>
+            <a href="/site/17/">Partnerschaften zur Erreichung der Ziele</a>
         </h3>
-        <span class="total">24 indicators</span>
+        <span class="total">3 indikatoren</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">24</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status complete"><span class="status-inner">3</span></span><strong>complete</strong><span class="value">100%</span>
                 </div>
                 
-                
-                <div>
-                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
-                </div>
                 
                 <br style="clear:both;">
             </div>
@@ -1070,13 +929,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                <span class="complete" style="width:100.0%" title="complete: 100%"></span>
                 
-                
-                
-                
-                
-                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -1092,8 +946,9 @@ data-event-label="high"
   
 
   </div>
-  <a href="#top">Back to top</a>
+  <a href="#top"></a>
 </div>
+
 <footer role="contentinfo">
     <div class="container">
         <div class="row">
@@ -1101,33 +956,24 @@ data-event-label="high"
                 <div id="footerLinks">
                     <ul>
                         <li>
-                            <a href="https://open-sdg.org">Built using Open SDG</a>
+                            <a href="https://open-sdg.org" target="_blank" onclick="return confirm_alert('von open-sdg', 'De');">
+                              Seite basiert auf Open SDG
+                            </a>
                         </li>
                         
                         <li>
-                            <a href="/site/contact-us">Contact us</a>
-                            
-                        </li>
+                              
+                                
+                                  <a href="mailto:dns-indikatoren@destatis.de">Kontakt</a>
+                                
+                              
+                          </li>
                         <li>
-                            
-                            <a href="https://twitter.com/MyTwitterAccount" target="_blank">Twitter</a>
-                            
-                        </li>
-                        <li>
-                            
-                            <a href="https://facebook.com/MyFacebookAccount" target="_blank">Facebook</a>
-                            
-                        </li>
-                        <li>
-                            <a href="/site/about/cookies-and-privacy/">Cookies</a>
-                            
-                        </li>
+                              <a href="/site/imprint/ ">Im­pres­s­um</a>
+                              
+                          </li>
                         
                         
-                        
-                        <li>
-                            <a href="/site/config">Configuration</a>
-                        </li>
                         </ul>
                 </div>
             </div>
@@ -1157,17 +1003,17 @@ data-event-label="high"
 
 
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'hide';</script>
+    translations['general']['hide'] = '';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Search';</script>
+    translations['search']['search'] = 'Suche';</script>
 
-<script src='/site/assets/js/sdg.js?v=20240214101336'></script>
+<script src='/site/assets/js/sdg.js?v=20240214105304'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20240214101336"></script><script>
+    <script src="/site/assets/js/custom.js?v=20240214105304"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
@@ -1175,3 +1021,4 @@ data-event-label="high"
 
 </body>
 </html>
+
