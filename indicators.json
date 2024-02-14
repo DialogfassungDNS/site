@@ -7,7 +7,7 @@
         
         {
           "id": "1-1-ab",
-          "title": "global_indicators.1-1-ab-title",
+          "title": "Materielle Deprivation sowie erhebliche materielle Deprivation",
           "description": "",
           "keywords": "",
           "href": "/site/1-1-ab/",
@@ -23,7 +23,7 @@
         
         {
           "id": "2-1-a",
-          "title": "global_indicators.2-1-a-title",
+          "title": "Stickstoffüberschuss der Landwirtschaft",
           "description": "",
           "keywords": "",
           "href": "/site/2-1-a/",
@@ -31,7 +31,7 @@
         },
         {
           "id": "2-1-b",
-          "title": "global_indicators.2-1-b-title",
+          "title": "Ökologischer Landbau",
           "description": "",
           "keywords": "",
           "href": "/site/2-1-b/",
@@ -39,7 +39,7 @@
         },
         {
           "id": "2-2",
-          "title": "global_indicators.2-2-title",
+          "title": "Unterstützung guter Regierungsführung bei der Erreichung einer angemessenen Ernährung weltweit",
           "description": "",
           "keywords": "",
           "href": "/site/2-2/",
@@ -55,7 +55,7 @@
         
         {
           "id": "3-1-ab",
-          "title": "global_indicators.3-1-ab-title",
+          "title": "Vorzeitige Sterblichkeit",
           "description": "",
           "keywords": "",
           "href": "/site/3-1-ab/",
@@ -63,7 +63,7 @@
         },
         {
           "id": "3-1-cd",
-          "title": "global_indicators.3-1-cd-title",
+          "title": "Raucherquote von Jugendlichen und Erwachsenen",
           "description": "",
           "keywords": "",
           "href": "/site/3-1-cd/",
@@ -71,7 +71,7 @@
         },
         {
           "id": "3-1-e",
-          "title": "global_indicators.3-1-e-title",
+          "title": "Adipositasquote von Kindern und Jugendlichen",
           "description": "",
           "keywords": "",
           "href": "/site/3-1-e/",
@@ -79,7 +79,7 @@
         },
         {
           "id": "3-1-f",
-          "title": "global_indicators.3-1-f-title",
+          "title": "Adipositasquote von Erwachsenen",
           "description": "",
           "keywords": "",
           "href": "/site/3-1-f/",
@@ -87,7 +87,7 @@
         },
         {
           "id": "3-2-a",
-          "title": "global_indicators.3-2-a-title",
+          "title": "Emissionen von Luftschadstoffen",
           "description": "",
           "keywords": "",
           "href": "/site/3-2-a/",
@@ -95,7 +95,7 @@
         },
         {
           "id": "3-2-b",
-          "title": "global_indicators.3-2-b-title",
+          "title": "Anteil der Bevölkerung mit erhöhter PM₁₀-Feinstaubexposition",
           "description": "",
           "keywords": "",
           "href": "/site/3-2-b/",
@@ -103,7 +103,7 @@
         },
         {
           "id": "3-3",
-          "title": "global_indicators.3-3-title",
+          "title": "Beitrag Deutschlands zur globalen Pandemieprävention und -reaktion",
           "description": "",
           "keywords": "",
           "href": "/site/3-3/",
@@ -119,7 +119,7 @@
         
         {
           "id": "4-1-a",
-          "title": "global_indicators.4-1-a-title",
+          "title": "Frühe Schulabgängerinnen und Schulabgänger",
           "description": "",
           "keywords": "",
           "href": "/site/4-1-a/",
@@ -127,7 +127,7 @@
         },
         {
           "id": "4-1-b",
-          "title": "global_indicators.4-1-b-title",
+          "title": "Akademisch Qualifizierte und beruflich Höherqualifizierte",
           "description": "",
           "keywords": "",
           "href": "/site/4-1-b/",
@@ -135,7 +135,7 @@
         },
         {
           "id": "4-2-ab",
-          "title": "global_indicators.4-2-ab-title",
+          "title": "Ganztagsbetreuung für Kinder",
           "description": "",
           "keywords": "",
           "href": "/site/4-2-ab/",
@@ -151,7 +151,7 @@
         
         {
           "id": "5-1-a",
-          "title": "global_indicators.5-1-a-title",
+          "title": "Verdienstabstand zwischen Frauen und Männern",
           "description": "",
           "keywords": "",
           "href": "/site/5-1-a/",
@@ -159,7 +159,7 @@
         },
         {
           "id": "5-1-bc",
-          "title": "global_indicators.5-1-bc-title",
+          "title": "Frauen in Führungspositionen in der Wirtschaft sowie im öffentlichen Dienst des Bundes",
           "description": "",
           "keywords": "",
           "href": "/site/5-1-bc/",
@@ -167,7 +167,7 @@
         },
         {
           "id": "5-1-d",
-          "title": "global_indicators.5-1-d-title",
+          "title": "Väterbeteiligung beim Elterngeld",
           "description": "",
           "keywords": "",
           "href": "/site/5-1-d/",
@@ -175,7 +175,7 @@
         },
         {
           "id": "5-1-e",
-          "title": "global_indicators.5-1-e-title",
+          "title": "Berufliche Qualifizierung von Frauen und Mädchen durch deutsche entwicklungspolitische Zusammenarbeit",
           "description": "",
           "keywords": "",
           "href": "/site/5-1-e/",
@@ -191,7 +191,7 @@
         
         {
           "id": "6-1-a",
-          "title": "global_indicators.6-1-a-title",
+          "title": "Phosphor in Fließgewässern",
           "description": "",
           "keywords": "",
           "href": "/site/6-1-a/",
@@ -199,7 +199,7 @@
         },
         {
           "id": "6-1-b",
-          "title": "global_indicators.6-1-b-title",
+          "title": "Nitrat im Grundwasser",
           "description": "",
           "keywords": "",
           "href": "/site/6-1-b/",
@@ -207,7 +207,7 @@
         },
         {
           "id": "6-2-ab",
-          "title": "global_indicators.6-2-ab-title",
+          "title": "Entwicklungszusammenarbeit für Trinkwasser- und Sanitärversorgung",
           "description": "",
           "keywords": "",
           "href": "/site/6-2-ab/",
@@ -223,7 +223,7 @@
         
         {
           "id": "7-1-ab",
-          "title": "global_indicators.7-1-ab-title",
+          "title": "Endenergieproduktivität und Primärenergieverbrauch",
           "description": "",
           "keywords": "",
           "href": "/site/7-1-ab/",
@@ -231,7 +231,7 @@
         },
         {
           "id": "7-2-a",
-          "title": "global_indicators.7-2-a-title",
+          "title": "Anteil erneuerbarer Energien am Brutto-Endenergieverbrauch",
           "description": "",
           "keywords": "",
           "href": "/site/7-2-a/",
@@ -239,7 +239,7 @@
         },
         {
           "id": "7-2-b",
-          "title": "global_indicators.7-2-b-title",
+          "title": "Anteil des Stroms aus erneuerbaren Energiequellen am Bruttostromverbrauch",
           "description": "",
           "keywords": "",
           "href": "/site/7-2-b/",
@@ -255,7 +255,7 @@
         
         {
           "id": "8-1",
-          "title": "global_indicators.8-1-title",
+          "title": "Gesamtrohstoffproduktivität",
           "description": "",
           "keywords": "",
           "href": "/site/8-1/",
@@ -263,7 +263,7 @@
         },
         {
           "id": "8-2-ab",
-          "title": "global_indicators.8-2-ab-title",
+          "title": "Staatsdefizit und strukturelles Defizit",
           "description": "",
           "keywords": "",
           "href": "/site/8-2-ab/",
@@ -271,7 +271,7 @@
         },
         {
           "id": "8-2-c",
-          "title": "global_indicators.8-2-c-title",
+          "title": "Schuldenstand",
           "description": "",
           "keywords": "",
           "href": "/site/8-2-c/",
@@ -279,7 +279,7 @@
         },
         {
           "id": "8-3",
-          "title": "global_indicators.8-3-title",
+          "title": "Verhältnis der Bruttoanlageinvestitionen zum BIP",
           "description": "",
           "keywords": "",
           "href": "/site/8-3/",
@@ -287,7 +287,7 @@
         },
         {
           "id": "8-4",
-          "title": "global_indicators.8-4-title",
+          "title": "Bruttoinlandsprodukt je Einwohnerin und Einwohner",
           "description": "",
           "keywords": "",
           "href": "/site/8-4/",
@@ -295,7 +295,7 @@
         },
         {
           "id": "8-5-ab",
-          "title": "global_indicators.8-5-ab-title",
+          "title": "Erwerbstätigenquote",
           "description": "",
           "keywords": "",
           "href": "/site/8-5-ab/",
@@ -303,7 +303,7 @@
         },
         {
           "id": "8-6",
-          "title": "global_indicators.8-6-title",
+          "title": "Mitglieder des Textilbündnisses",
           "description": "",
           "keywords": "",
           "href": "/site/8-6/",
@@ -319,7 +319,7 @@
         
         {
           "id": "9-1-a",
-          "title": "global_indicators.9-1-a-title",
+          "title": "Private und öffentliche Ausgaben für Forschung und Entwicklung",
           "description": "",
           "keywords": "",
           "href": "/site/9-1-a/",
@@ -327,7 +327,7 @@
         },
         {
           "id": "9-1-b",
-          "title": "global_indicators.9-1-b-title",
+          "title": "Breitbandausbau",
           "description": "",
           "keywords": "",
           "href": "/site/9-1-b/",
@@ -343,7 +343,7 @@
         
         {
           "id": "10-1",
-          "title": "global_indicators.10-1-title",
+          "title": "Ausländische Schulabsolventinnen und Schulabsolventen",
           "description": "",
           "keywords": "",
           "href": "/site/10-1/",
@@ -351,7 +351,7 @@
         },
         {
           "id": "10-2",
-          "title": "global_indicators.10-2-title",
+          "title": "Gini-Koeffizient des Einkommens nach Sozialtransfers",
           "description": "",
           "keywords": "",
           "href": "/site/10-2/",
@@ -367,7 +367,7 @@
         
         {
           "id": "11-1-a",
-          "title": "global_indicators.11-1-a-title",
+          "title": "Anstieg der Siedlungs- und Verkehrsfläche",
           "description": "",
           "keywords": "",
           "href": "/site/11-1-a/",
@@ -375,7 +375,7 @@
         },
         {
           "id": "11-1-b",
-          "title": "global_indicators.11-1-b-title",
+          "title": "Freiraumverlust",
           "description": "",
           "keywords": "",
           "href": "/site/11-1-b/",
@@ -383,7 +383,7 @@
         },
         {
           "id": "11-1-c",
-          "title": "global_indicators.11-1-c-title",
+          "title": "Siedlungsdichte",
           "description": "",
           "keywords": "",
           "href": "/site/11-1-c/",
@@ -391,7 +391,7 @@
         },
         {
           "id": "11-2-a",
-          "title": "global_indicators.11-2-a-title",
+          "title": "Endenergieverbrauch im Güterverkehr",
           "description": "",
           "keywords": "",
           "href": "/site/11-2-a/",
@@ -399,7 +399,7 @@
         },
         {
           "id": "11-2-b",
-          "title": "global_indicators.11-2-b-title",
+          "title": "Endenergieverbrauch im Personenverkehr",
           "description": "",
           "keywords": "",
           "href": "/site/11-2-b/",
@@ -407,7 +407,7 @@
         },
         {
           "id": "11-2-c",
-          "title": "global_indicators.11-2-c-title",
+          "title": "Erreichbarkeit von Mittel- und Oberzentren mit öffentlichen Verkehrsmitteln",
           "description": "",
           "keywords": "",
           "href": "/site/11-2-c/",
@@ -415,7 +415,7 @@
         },
         {
           "id": "11-3",
-          "title": "global_indicators.11-3-title",
+          "title": "Überlastung durch Wohnkosten",
           "description": "",
           "keywords": "",
           "href": "/site/11-3/",
@@ -423,7 +423,7 @@
         },
         {
           "id": "11-4",
-          "title": "global_indicators.11-4-title",
+          "title": "Zahl der Objekte in der Deutschen Digitalen Bibliothek",
           "description": "",
           "keywords": "",
           "href": "/site/11-4/",
@@ -439,7 +439,7 @@
         
         {
           "id": "12-1-a",
-          "title": "global_indicators.12-1-a-title",
+          "title": "Marktanteil von Produkten mit staatlichen Umweltzeichen",
           "description": "",
           "keywords": "",
           "href": "/site/12-1-a/",
@@ -447,7 +447,7 @@
         },
         {
           "id": "12-1-b",
-          "title": "global_indicators.12-1-b-title",
+          "title": "Globale Umweltinanspruchnahme durch den Konsum privater Haushalte",
           "description": "",
           "keywords": "",
           "href": "/site/12-1-b/",
@@ -455,7 +455,7 @@
         },
         {
           "id": "12-2",
-          "title": "global_indicators.12-2-title",
+          "title": "Umweltmanagement EMAS",
           "description": "",
           "keywords": "",
           "href": "/site/12-2/",
@@ -463,7 +463,7 @@
         },
         {
           "id": "12-3-ab",
-          "title": "global_indicators.12-3-ab-title",
+          "title": "Nachhaltige Beschaffung",
           "description": "",
           "keywords": "",
           "href": "/site/12-3-ab/",
@@ -479,7 +479,7 @@
         
         {
           "id": "13-1-a",
-          "title": "global_indicators.13-1-a-title",
+          "title": "Treibhausgasemissionen",
           "description": "",
           "keywords": "",
           "href": "/site/13-1-a/",
@@ -487,7 +487,7 @@
         },
         {
           "id": "13-1-b",
-          "title": "global_indicators.13-1-b-title",
+          "title": "Internationale Klimafinanzierung zur Reduktion von Treibhausgasen und zur Anpassung an den Klimawandel",
           "description": "",
           "keywords": "",
           "href": "/site/13-1-b/",
@@ -503,7 +503,7 @@
         
         {
           "id": "14-1-a",
-          "title": "global_indicators.14-1-a-title",
+          "title": "Stickstoffeintrag über die Zuflüsse in die Nord- und Ostsee",
           "description": "",
           "keywords": "",
           "href": "/site/14-1-a/",
@@ -511,7 +511,7 @@
         },
         {
           "id": "14-1-b",
-          "title": "global_indicators.14-1-b-title",
+          "title": "Anteil der nachhaltig befischten Fischbestände in Nord- und Ostsee",
           "description": "",
           "keywords": "",
           "href": "/site/14-1-b/",
@@ -527,7 +527,7 @@
         
         {
           "id": "15-1",
-          "title": "global_indicators.15-1-title",
+          "title": "Artenvielfalt und Landschaftsqualität",
           "description": "",
           "keywords": "",
           "href": "/site/15-1/",
@@ -535,7 +535,7 @@
         },
         {
           "id": "15-2",
-          "title": "global_indicators.15-2-title",
+          "title": "Eutrophierung der Ökosysteme",
           "description": "",
           "keywords": "",
           "href": "/site/15-2/",
@@ -543,7 +543,7 @@
         },
         {
           "id": "15-3-ab",
-          "title": "global_indicators.15-3-ab-title",
+          "title": "Erhalt bzw. Wiederaufbau von Wäldern unter REDD+ sowie internationaler Bodenschutz",
           "description": "",
           "keywords": "",
           "href": "/site/15-3-ab/",
@@ -559,7 +559,7 @@
         
         {
           "id": "16-1",
-          "title": "global_indicators.16-1-title",
+          "title": "Straftaten",
           "description": "",
           "keywords": "",
           "href": "/site/16-1/",
@@ -567,7 +567,7 @@
         },
         {
           "id": "16-2",
-          "title": "global_indicators.16-2-title",
+          "title": "Anzahl der in betroffenen Weltregionen durchgeführten Projekte zur Sicherung, Registrierung und Zerstörung von Kleinwaffen und leichten Waffen durch Deutschland",
           "description": "",
           "keywords": "",
           "href": "/site/16-2/",
@@ -575,7 +575,7 @@
         },
         {
           "id": "16-3-ab",
-          "title": "global_indicators.16-3-ab-title",
+          "title": "Corruption Perception Index in Deutschland sowie in den Partnerländern der deutschen Entwicklungszusammenarbeit",
           "description": "",
           "keywords": "",
           "href": "/site/16-3-ab/",
@@ -591,7 +591,7 @@
         
         {
           "id": "17-1",
-          "title": "global_indicators.17-1-title",
+          "title": "Anteil öffentlicher Entwicklungsausgaben am Bruttonationaleinkommen",
           "description": "",
           "keywords": "",
           "href": "/site/17-1/",
@@ -599,7 +599,7 @@
         },
         {
           "id": "17-2",
-          "title": "global_indicators.17-2-title",
+          "title": "Anzahl der Studierenden und Forschenden aus Entwicklungsländern sowie aus am wenigsten entwickelten Ländern pro Jahr",
           "description": "",
           "keywords": "",
           "href": "/site/17-2/",
@@ -607,7 +607,7 @@
         },
         {
           "id": "17-3",
-          "title": "global_indicators.17-3-title",
+          "title": "Einfuhren aus am wenigsten entwickelten Ländern",
           "description": "",
           "keywords": "",
           "href": "/site/17-3/",
