@@ -118,6 +118,14 @@
           "status": "complete"
         },
         {
+          "id": "4-1-c",
+          "title": "Zusammenhang zwischen sozialer Herkunft und Bildungserfolg",
+          "description": "",
+          "keywords": "",
+          "href": "/site/4-1-c/",
+          "status": "complete"
+        },
+        {
           "id": "4-1-d",
           "title": "Schulen mit BNE-Schullabel",
           "description": "",
@@ -171,6 +179,14 @@
           "description": "",
           "keywords": "",
           "href": "/site/5-1-e/",
+          "status": "complete"
+        },
+        {
+          "id": "5-1-f",
+          "title": "Berufliche Qualifizierung von Frauen und Mädchen durch deutsche entwicklungspolitische Zusammenarbeit",
+          "description": "",
+          "keywords": "",
+          "href": "/site/5-1-f/",
           "status": "complete"
         }]
     }
