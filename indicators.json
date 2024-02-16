@@ -70,30 +70,6 @@
           "status": "complete"
         },
         {
-          "id": "3-1-cd",
-          "title": "Raucherquote von Jugendlichen und Erwachsenen",
-          "description": "",
-          "keywords": "",
-          "href": "/site/3-1-cd/",
-          "status": "complete"
-        },
-        {
-          "id": "3-1-e",
-          "title": "Adipositasquote von Kindern und Jugendlichen",
-          "description": "",
-          "keywords": "",
-          "href": "/site/3-1-e/",
-          "status": "complete"
-        },
-        {
-          "id": "3-1-f",
-          "title": "Adipositasquote von Erwachsenen",
-          "description": "",
-          "keywords": "",
-          "href": "/site/3-1-f/",
-          "status": "complete"
-        },
-        {
           "id": "3-2-a",
           "title": "Emissionen von Luftschadstoffen",
           "description": "",
@@ -139,6 +115,14 @@
           "description": "",
           "keywords": "",
           "href": "/site/4-1-b/",
+          "status": "complete"
+        },
+        {
+          "id": "4-1-d",
+          "title": "Prävention Verbraucherverschuldung",
+          "description": "",
+          "keywords": "",
+          "href": "/site/4-1-d/",
           "status": "complete"
         },
         {
