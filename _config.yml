@@ -32,7 +32,6 @@ frontpage_goals_grid:
     title: frontpage.heading
     description: frontpage.instructions
 
-
 analytics:
   ga_prod: ''
 
