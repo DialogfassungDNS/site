@@ -79,7 +79,7 @@
         },
         {
           "id": "3-2-b",
-          "title": "Anteil der Bevölkerung mit erhöhter PM2,5-Feinstaubexposition",
+          "title": "Anteil der Bevölkerung mit erhöhter PM10-Feinstaubexposition",
           "description": "",
           "keywords": "",
           "href": "/site/3-2-b/",
@@ -431,10 +431,18 @@
         },
         {
           "id": "11-4",
-          "title": "Zahl der Objekte in der Deutschen Digitalen Bibliothek",
+          "title": "Anzahl der Kommunen mit (Integrierten) Stadtentwicklungskonzepten bzw. Siedlungsentwicklungskonzepten",
           "description": "",
           "keywords": "",
           "href": "/site/11-4/",
+          "status": "complete"
+        },
+        {
+          "id": "11-5",
+          "title": "Zahl der Objekte in der Deutschen Digitalen Bibliothek",
+          "description": "",
+          "keywords": "",
+          "href": "/site/11-5/",
           "status": "complete"
         }]
     }
@@ -495,10 +503,42 @@
         },
         {
           "id": "13-1-b",
-          "title": "Internationale Klimafinanzierung zur Reduktion von Treibhausgasen und zur Anpassung an den Klimawandel",
+          "title": "Treibhausgasemissionen",
           "description": "",
           "keywords": "",
           "href": "/site/13-1-b/",
+          "status": "complete"
+        },
+        {
+          "id": "13-1-c",
+          "title": "Rohstoffeinsatz für Investitionen in Bauten",
+          "description": "",
+          "keywords": "",
+          "href": "/site/13-1-c/",
+          "status": "complete"
+        },
+        {
+          "id": "13-1-d",
+          "title": "xxx",
+          "description": "",
+          "keywords": "",
+          "href": "/site/13-1-d/",
+          "status": "complete"
+        },
+        {
+          "id": "13-2-a",
+          "title": "Baumkronendichte in städtischen Gebieten",
+          "description": "",
+          "keywords": "",
+          "href": "/site/13-2-a/",
+          "status": "complete"
+        },
+        {
+          "id": "13-3-a",
+          "title": "Internationale Klimafinanzierung zur Reduktion von Treibhausgasen und zur Anpassung an den Klimawandel",
+          "description": "",
+          "keywords": "",
+          "href": "/site/13-3-a/",
           "status": "complete"
         }]
     }
@@ -556,6 +596,22 @@
           "keywords": "",
           "href": "/site/15-3-ab/",
           "status": "complete"
+        },
+        {
+          "id": "15-4",
+          "title": "Versiegelung des Bodens",
+          "description": "",
+          "keywords": "",
+          "href": "/site/15-4/",
+          "status": "complete"
+        },
+        {
+          "id": "15-4-a",
+          "title": "global_indicators.15-4-a-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/15-4-a/",
+          "status": "complete"
         }]
     }
   },
@@ -567,26 +623,18 @@
         
         {
           "id": "16-1",
-          "title": "Straftaten",
+          "title": "Fördervolumen der Bundesregierung für Projekte sowie Anzahl der durch Fachpersonal der Bundeswehr ausgebildeten Personen zur Stärkung der Kontrolle von Kleinwaffen und leichten Waffen sowie dazugehöriger Munition weltweit",
           "description": "",
           "keywords": "",
           "href": "/site/16-1/",
           "status": "complete"
         },
         {
-          "id": "16-2",
-          "title": "Anzahl der in betroffenen Weltregionen durchgeführten Projekte zur Sicherung, Registrierung und Zerstörung von Kleinwaffen und leichten Waffen durch Deutschland",
-          "description": "",
-          "keywords": "",
-          "href": "/site/16-2/",
-          "status": "complete"
-        },
-        {
-          "id": "16-3-ab",
+          "id": "16-2-ab",
           "title": "Corruption Perception Index in Deutschland sowie in den Partnerländern der deutschen Entwicklungszusammenarbeit",
           "description": "",
           "keywords": "",
-          "href": "/site/16-3-ab/",
+          "href": "/site/16-2-ab/",
           "status": "complete"
         }]
     }
