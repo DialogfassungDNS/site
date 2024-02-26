@@ -21,6 +21,7 @@
                 {{ page.indicator.section }} – <i title="{{ page.t.general.postulate}}: {{ page.indicator.postulate }}">{{ page.indicator.postulate }}</i>
               </h1>
               <h2 class="titles goal-{{ page.goal.number }}">{{ page.t.general.indicator }} {{ page.indicator.indicator_display }}: {{ page.indicator.indicator_name }}</h2>
+              {% if page.indicator.new_indicator %} <br> <i class="fa-thin fa-circle-plus"></i> Neuer Indikator <i class="fa-thin fa-circle-plus"></i>{% endif %}
             {% endunless %}
           </h1>
         </div>
