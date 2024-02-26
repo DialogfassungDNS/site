@@ -21,8 +21,8 @@
                 {{ page.indicator.section }} – <i title="{{ page.t.general.postulate}}: {{ page.indicator.postulate }}">{{ page.indicator.postulate }}</i>
               </h1>
               <h2 class="titles goal-{{ page.goal.number }}">{{ page.t.general.indicator }} {{ page.indicator.indicator_display }}: {{ page.indicator.indicator_name }}
-              {% if page.indicator.new_indicator %} <br> <i class="fa fa-plus"></i> Neuer Indikator <i class="fa fa-plus"></i>{% endif %}
-              {% if page.indicator.maintained_indicator %} <br> <i class="fa fa-wrench"></i> Überarbeiteter Indikator <i class="fa fa-wrench"></i>{% endif %}
+              {% if page.indicator.new_indicator %} <br> <i class="fa fa-plus" style="margin-top:10px"></i> Neuer Indikator <i class="fa fa-plus"></i>{% endif %}
+              {% if page.indicator.maintained_indicator %} <br> <i class="fa fa-wrench" style="margin-top:10px"></i> Überarbeiteter Indikator <i class="fa fa-wrench"></i>{% endif %}
               </h2>
             {% endunless %}
           </h1>
