@@ -86,11 +86,12 @@
       {%- assign range_title_key = range_id  | append: '-title' -%}
       {%- assign target_range = page.t.dns_ranges[ range_title_key ] -%}
       {%- assign target = page.t.dns_targets[ target_title_key ] -%}
+
       <div class="row">
         <div class="col indicator-cards target goal-target no-gutters">
           <div class="row range-and-postulate">
             <span class="indicator-card-number">
-            <p style="margin-bottom: 0px;">
+            <p {% if target_range == last_range %} style="margin-bottom: 0px; visibility: hidden" {% else %} style="margin-bottom: 0px;" {% endif %}>
               {{ target_range }}
             </p>
             </span>
@@ -99,7 +100,7 @@
             </p>
           </div>
         </div>
-
+        {% assign last_range = target_range %}
         <div class="col indicator-cards no-gutters">
 
           {% for indicator in group.items %}
