@@ -130,7 +130,7 @@
               <a class="indicator-link-goal-page" href="{{ indicator.url }}" {% if indicator.dialogue == "old" %} style="color: grey" {% endif %}>
                 {{ indicator.name }}
               </a>
-              <p {% if indicator.dialogue == "old" %} style="margin-bottom: 0px; padding-left: 0px; color: grey" {% else %} style="margin-bottom: 0px; padding-left: 0px;" {% endif %}>
+              <p class="titles goal-{{ indicator.goal }}" {% if indicator.dialogue == "old" %} style="margin-bottom: 0px; padding-left: 0px; color: grey" {% else %} style="margin-bottom: 0px; padding-left: 0px;" {% endif %}>
                 {% if indicator.dialogue == "new" %}
                   <i class="fa fa-plus" aria-hidden="true"></i> Neuer Indikator <i class="fa fa-plus" aria-hidden="true"></i>
                 {% elsif indicator.dialogue == "revised" %}
