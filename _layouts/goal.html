@@ -89,10 +89,8 @@
       <div class="row">
         <div class="col indicator-cards target goal-target no-gutters">
           <div class="row range-and-postulate">
-            <span class="indicator-card-number" {% if page.indicator.dialogue == "old" %} style="color:grey" {% endif %}>
-              <p>
+            <span class="indicator-card-number">
               {{ target_range }}
-              </p>
             </span>
             <p class="postulate">
               {{ target }}
@@ -118,15 +116,15 @@
 
             <div class="row" style="margin-bottom: 25px;">
               {% if indicator.placeholder and indicator.placeholder != '' %}
-              <span class="indicator-card-number">
+              <span class="indicator-card-number" {% if page.indicator.dialogue == "old" %} style="color:grey" {% endif %}>
                 {{ indicator.indicator_display }}
               </span>
               {{ indicator.placeholder }}
               {% else %}
-              <span class="indicator-card-number" >
+              <span class="indicator-card-number" {% if page.indicator.dialogue == "old" %} style="color:grey" {% endif %}>
                 {{ indicator.indicator_display }}
               </span>
-              <a class="indicator-link-goal-page" href="{{ indicator.url }}" >
+              <a class="indicator-link-goal-page" href="{{ indicator.url }}" {% if page.indicator.dialogue == "old" %} style="color:grey" {% endif %}>
                 {{ indicator.name }}
                 {% if indicator.dialogue == "new" %}
                   <br> <i class="fa fa-plus" aria-hidden="true"></i> Neuer Indikator <i class="fa fa-plus" aria-hidden="true"></i>
