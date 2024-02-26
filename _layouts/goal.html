@@ -90,7 +90,7 @@
         <div class="col indicator-cards target goal-target no-gutters">
           <div class="row range-and-postulate">
             <span class="indicator-card-number">
-            <p class="indicator-card-number">
+            <p style="margin-bottom: 0px;">
               {{ target_range }}
             </p>
             </span>
@@ -135,7 +135,7 @@
                 {% elsif indicator.dialogue == "target" %}
                   <br> <i class="fa fa-bullseye" aria-hidden="true"></i> Neues Ziel <i class="fa fa-bullseye" aria-hidden="true"></i>
                 {% elsif indicator.dialogue == "old" %}
-                  <br> <i class="fa fa-minus" aria-hidden="true"></i> Keine Änderungen <i class="fa fa-minus" aria-hidden="true"></i>
+                  <br> <i class="fa fa-times" aria-hidden="true"></i> Keine Änderungen <i class="fa fa-times" aria-hidden="true"></i>
                 {% endif %}
 
               </a>
