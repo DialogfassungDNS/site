@@ -126,6 +126,7 @@
               </span>
               <a class="indicator-link-goal-page" href="{{ indicator.url }}" >
                 {{ indicator.name }}
+                {% if indicator.new_indicator %} <br> <i class="fa fa-chevron-left" aria-hidden="true"></i> Neuer Indikator <i class="fa-thin fa-circle-plus" aria-hidden="true"></i>{% endif %}
               </a>
               {% endif %}
             </div>
