@@ -127,7 +127,7 @@
               <span class="indicator-card-number" {% if indicator.dialogue == "old" %} style="color: grey" {% endif %}>
                 {{ indicator.indicator_display }}
               </span>
-              <a class="indicator-link-goal-page" href="{{ indicator.url }}" {% if page.indicator.dialogue == "old" %} style="color: grey" {% endif %}>
+              <a class="indicator-link-goal-page" href="{{ indicator.url }}" {% if indicator.dialogue == "old" %} style="color: grey" {% endif %}>
                 {{ indicator.name }}
               </a>
               <p {% if indicator.dialogue == "old" %} style="margin-bottom: 0px; padding-left: 0px; color: grey" {% else %} style="margin-bottom: 0px; padding-left: 0px;" {% endif %}>
