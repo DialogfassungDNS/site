@@ -89,7 +89,7 @@
       <div class="row">
         <div class="col indicator-cards target goal-target no-gutters">
           <div class="row range-and-postulate">
-            <span class="indicator-card-number">
+            <span class="indicator-card-number" {% if page.indicator.dialogue == "old" %} style="color:grey" {% endif %}>
               <p>
               {{ target_range }}
               </p>
