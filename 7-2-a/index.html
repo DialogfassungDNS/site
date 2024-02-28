@@ -148,7 +148,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240228093200">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240228095334">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -232,16 +232,6 @@ layout-indicator
                       </a>
                       <ul class="submenu dropdown-menu"><li><a class="dropdown-item" href="https://sdg-indikatoren.de/about/sdg/monitoring">Monitoring</a></li><li><a class="dropdown-item" href="https://sdg-indikatoren.de/about/sdg/publications">Publikationen</a></li></ul>
                     </li></ul>
-          </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-menu-1-status" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Status
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-menu-1-status"><li class=" ">
-    <a class="dropdown-item" href="/site/status/">Methodik</a>
-</li>
-<li class=" ">
-    <a class="dropdown-item" href="/site/status_summary/">Übersicht</a>
-</li>
-</ul>
           </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-menu-1-strategy" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Nachhaltigkeitsstrategie
                 </a>
@@ -401,6 +391,8 @@ data-event-label="high"
               </h1>
               <h2 class="titles goal-7" >Indikator 7.2.a: Anteil erneuerbarer Energien am Brutto-Endenergieverbrauch
                 
+                  <br> <i class="fa fa-bullseye" style="margin-top:10px"></i> Neues Ziel <i class="fa fa-bullseye"></i>
+                
             </h2>
             
           </h1>
@@ -473,24 +465,6 @@ data-event-label="high"
   
 
   
-
-<div class="row" id="page-content">
-  <div class="col-xs-12">
-    <div>
-  <div class="my-header">
-    <label class="default">Erneuerbarer Energien: Anstieg auf 30&nbsp;% bis 2030
-      <a href="https://dns-indikatoren.de/status"><img src="https://sdg-indikatoren.de/public/Wettersymbole/Wolke.png" title="Der Indikator entwickelte sich in 2021 zwar in die gewünschte Richtung auf das Ziel zu, bei Fortsetzung der Entwicklung wäre das Ziel im Zieljahr aber um mehr als 20 % der Differenz zwischen Zielwert und dem Wert aus 2021 verfehlt worden." alt="Wettersymbol: Wolke" />
-      </a>
-    </label>
-  </div>
-</div>
-<div class="my-header-note">
-  <label class="default"><b>(Bewertung aus dem Indikatorenbericht 2022, bezogen auf das Berichtsjahr 2021)
-  </b></label>
-</div>
-
-  </div>
-</div>
 
 
   
@@ -1551,10 +1525,6 @@ data-event-label="Change to indicator.sources tab"
   
   
   
-      
-        
-          
-  
   
   
   
@@ -1638,7 +1608,7 @@ data-event-label="Change to indicator.sources tab"
             <th scope="row" style="text-align: left; width: 130px;">Ziel und Intention </th>
             <td>
               
-                <p>Die Reserven fossiler Energieträger wie Öl und Gas sind begrenzt. Darüber hinaus ist ihre Nutzung mit der Emission von Treibhausgasen verbunden. Ein Umstieg auf erneuerbare Energien, die sich als natürliche Energiequellen ständig regenerieren, verringert die energetisch bedingten Emissionen und folglich das Ausmaß des Klimawandels. Zusätzlich werden die Abhängigkeit von Energieimporten und der Ressourcenverbrauch gemindert sowie technische Innovationen gefördert. Ziel der Bundesregierung ist es daher, den Anteil der erneuerbaren Energien am Brutto-Endenergieverbrauch bis zum Jahr 2020 auf 18 %, bis 2030 auf 30 %, bis 2040 auf 45 % und bis 2050 auf 60 % zu erhöhen.</p>
+                <p>Die Reserven fossiler Energieträger wie Öl und Gas sind begrenzt. Darüber hinaus ist ihre Nutzung mit der Emission von Treibhausgasen verbunden. Ein Umstieg auf erneuerbare Energien, die sich als natürliche Energiequellen ständig regenerieren, verringert die energetisch bedingten Emissionen und folglich das Ausmaß des Klimawandels. Zusätzlich werden die Abhängigkeit von Energieimporten und der Ressourcenverbrauch gemindert sowie technische Innovationen gefördert. Ziel der Bundesregierung ist es daher, den Anteil der erneuerbaren Energien am Brutto-Endenergieverbrauch bis zum Jahr 2030 auf 30 %, bis 2040 auf 45 % und bis 2050 auf 60 % zu erhöhen.</p>
 
               
             </td>
@@ -2504,28 +2474,6 @@ data-event-label="Change to indicator.sources tab"
   
   
   
-      
-        
-      
-
-      
-      
-
-
-      
-         <!-- case: content -->
-          <p> <p><b>Text aus dem <a href="https://dns-indikatoren.de/publications_reports/">Indikatorenbericht 2022 </a></b><br /><br />Bei diesem Indikator werden der aus erneuerbaren Energiequellen erzeugte Strom (unter anderem aus Wasserkraft, Windkraft auf Land und auf See, Solarenergie) und die Wärme (unter anderem aus Geothermie, Biomasse oder biogenen Abfällen) sowie regenerative Kraftstoffe zu allen in Deutschland verbrauchten Energieträgern in Beziehung gesetzt. Dazu zählen neben den erneuerbaren Energien auch importierter Strom und fossile Energieträger wie Braun- und Steinkohle, Öl und Gas.<br /><br />Der Indikator wird von der Arbeitsgruppe Erneuerbare Energien-Statistik (<abbr title="Arbeitsgruppe Erneuerbare Energien-Statistik" tabindex="0">AGEE-Stat</abbr>) berechnet. Im Unterschied zur Berichterstattung gemäß der Erneuerbare-Energien-Richtlinie (Richtlinie 2009/28/EG) der Europäischen Union (<abbr title="Europäische Union" tabindex="0">EU</abbr>), die aufgrund des jährlich unterschiedlichen Dargebots bei Wasser- und Windkraft einen Durchschnittswert über mehrere Jahre vorsieht, werden für diesen Indikator die tatsächlich erzeugten Strommengen (Wind- und Wasserkraft) berücksichtigt (Energiekonzept der Bundesregierung).<br /><br />Bei der Berechnungsmethodik des Indikators ist zu beachten, dass Im- und Exporte von Strom nicht vollumfänglich im Energieverbrauch erneuerbarer Energiequellen berücksichtigt sind, wohingegen diese beim Brutto-Endenergieverbrauch mit eingerechnet werden. Daher kann der Indikator den Anteil der erneuerbaren Energien am Brutto-Endenergieverbrauch je nach Außenhandelssaldo über- oder unterschätzen. Bei einem positiven Netto-Exportsaldo von Strom – wie es seit 2001 der Fall ist – läge demnach der tatsächliche Anteil erneuerbarer Energien unter dem durch den Indikator dargestellten Niveau.<br /><br />Das Ziel für das Jahr 2020, einen Anteil von 18 % erneuerbarer Energien am Brutto-Endenergieverbrauch zu erreichen, wurde im Jahr 2020 mit 19,7 % erreicht. Im Jahr 2021 ging der Anteil erneuerbarer Energien allerdings auf 19,2 % zurück und bewegt sich damit in der kurzfristigen Veränderung nicht auf das nächste Ziel – im Jahr 2030 30 % zu erreichen – zu. Im längerfristigen Vergleich seit dem Jahr 2005 hat sich der Wert dieses Indikators von ursprünglich 7,1 % allerdings deutlich erhöht.<br /><br />Der Einsatz erneuerbarer Energien variiert je nach Bereich stark. In 2021 betrug der Anteil erneuerbarer Energien am Bruttostromverbrauch 41,1 %, am Endenergieverbrauch für Wärme und Kälte 16,5 % und im Verkehr 6,8 %. Bezogen auf das Jahr 2020 (aktuellere Daten lagen bei Redaktionsschluss noch nicht vor) spielten Biomasse mit einem Anteil von 58,0 % sowie Windkraft mit einem Anteil von 24,0 % am Primärenergieverbrauch aus erneuerbaren Energiequellen die größte Rolle unter den eingesetzten Energieträgern.<br /><br />Der Indikator weist Querbezüge zu den Indikatoren <a href="https://dns-indikatoren.de/13-1-a">13.1.a</a> „Treibhausgasemissionen“, <a href="https://dns-indikatoren.de/3-2-a">3.2.a</a> „Emissionen von Luftschadstoffen“ und <a href="https://dns-indikatoren.de/7-2-b">7.2.b</a> „Anteil des Stroms aus erneuerbaren Energiequellen am Bruttostromverbrauch“ auf.</p>
- </p>
-        
-      
-
-      <!-- weather -->
-      
-
-      
-    
-  
-  
   
   
   
@@ -3350,8 +3298,6 @@ data-event-label="Change to indicator.sources tab"
           <!--  -->
           
 <table class="table" style="width:100%; table-layout: fixed;">
-  
-  
   
   
   
@@ -6221,8 +6167,6 @@ data-event-label="Change to indicator.sources tab"
   
   
   
-  
-  
       
         
       
@@ -6446,8 +6390,6 @@ data-event-label="Change to indicator.sources tab"
       
       
 <table class="table" style="width:100%; table-layout: fixed;">
-  
-  
   
   
   
@@ -8112,8 +8054,6 @@ data-event-label="Change to indicator.sources tab"
   
   
   
-  
-  
       
         
       
@@ -8412,12 +8352,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/site/assets/js/sdg.js?v=20240228093200'></script>
+<script src='/site/assets/js/sdg.js?v=20240228095334'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20240228093200"></script><script>
+    <script src="/site/assets/js/custom.js?v=20240228095334"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

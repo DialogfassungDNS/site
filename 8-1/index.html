@@ -148,7 +148,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240228093200">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240228095334">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -232,16 +232,6 @@ layout-indicator
                       </a>
                       <ul class="submenu dropdown-menu"><li><a class="dropdown-item" href="https://sdg-indikatoren.de/about/sdg/monitoring">Monitoring</a></li><li><a class="dropdown-item" href="https://sdg-indikatoren.de/about/sdg/publications">Publikationen</a></li></ul>
                     </li></ul>
-          </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-menu-1-status" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Status
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-menu-1-status"><li class=" ">
-    <a class="dropdown-item" href="/site/status/">Methodik</a>
-</li>
-<li class=" ">
-    <a class="dropdown-item" href="/site/status_summary/">Übersicht</a>
-</li>
-</ul>
           </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-menu-1-strategy" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Nachhaltigkeitsstrategie
                 </a>
@@ -401,6 +391,8 @@ data-event-label="high"
               </h1>
               <h2 class="titles goal-8" >Indikator 8.1: Gesamtrohstoffproduktivität
                 
+                   <br> <i class="fa fa-wrench" style="margin-top:10px"></i> Überarbeiteter Indikator <i class="fa fa-wrench"></i>
+                
             </h2>
             
           </h1>
@@ -473,24 +465,6 @@ data-event-label="high"
   
 
   
-
-<div class="row" id="page-content">
-  <div class="col-xs-12">
-    <div>
-  <div class="my-header">
-    <label class="default">Gesamtrohstoffproduktivität: Beibehaltung des Trends der Jahre 2000&nbsp;- 2010&nbsp;bis 2030
-      <a href="https://dns-indikatoren.de/status"><img src="https://sdg-indikatoren.de/public/Wettersymbole/Wolke.png" title="Der Indikator entwickelte sich in 2018 zwar in die gewünschte Richtung auf das Ziel zu, bei Fortsetzung der Entwicklung wäre das Ziel im Zieljahr aber um mehr als 20 % der Differenz zwischen Zielwert und dem Wert aus 2018 verfehlt worden." alt="Wettersymbol: Wolke" />
-      </a>
-    </label>
-  </div>
-</div>
-<div class="my-header-note">
-  <label class="default"><b>(Bewertung aus dem Indikatorenbericht 2022, bezogen auf das Berichtsjahr 2018)
-  </b></label>
-</div>
-
-  </div>
-</div>
 
 
   
@@ -991,10 +965,6 @@ data-event-label="Change to indicator.sources tab"
   
   
   
-      
-        
-          
-  
   
   
   
@@ -1019,9 +989,6 @@ data-event-label="Change to indicator.sources tab"
   
       
         
-          
-      
-        
       
 
       
@@ -1031,10 +998,10 @@ data-event-label="Change to indicator.sources tab"
       
         
           <tr id="everythingElse">
-            <th scope="row" style="text-align: left; width: 130px;">Definition </th>
+            <th scope="row" style="text-align: left; width: 130px;">Beschreibung des Indikators </th>
             <td>
               
-                <p>Der Indikator Gesamtrohstoffproduktivität setzt den Wert aller an die letzte Verwendung abgegebenen Güter (in Euro, preisbereinigt) in Relation zur Masse der für ihre Produktion im In- und Ausland eingesetzten Rohstoffe (in Tonnen). Die letzte Verwendung umfasst dabei sowohl inländischen Konsum und inländische Investitionen als auch den Export.<br />Im Nenner des Indikators werden sowohl aus der Umwelt entnommene abiotische und biotische Rohstoffe berücksichtigt als auch Pflanzenmaterial, das durch die Land- und Forstwirtschaft produziert wurde. In der Grafik sind sowohl der Indikator selbst als auch Zähler und Nenner einzeln dargestellt.</p>
+                <p>Der Indikator entspricht der Definition des bisherigen Indikators 8.1, mit dem Unterschied, dass die Zeitreihe des hier vorgeschlagenen Indikators 2010 beginnt (statt bisher 2000). Die Daten des Indika-tors sind entsprechend auf das Basisjahr 2010 normiert (2010=100).<br />Begründung: Die Angaben zum Rohstoffeinsatz (Nenner des Indikators) wurden vor 2010 nur zu wenigen Berichtsjahren per Modellrechnung ermittelt und für die übrigen Jahre vor 2010 interpoliert. Zudem beruhen die Angaben vor 2010 auf einem Rechenmodell das mittlerweile methodisch und technisch überarbeitet wurde, weshalb methodische Verbesserungen in den Daten vor 2010 nicht mehr umgesetzt werden können.</p>
 
               
             </td>
@@ -1048,6 +1015,9 @@ data-event-label="Change to indicator.sources tab"
       
     
   
+      
+        
+          
       
         
       
@@ -1944,28 +1914,6 @@ data-event-label="Change to indicator.sources tab"
   
   
   
-      
-        
-      
-
-      
-      
-
-
-      
-         <!-- case: content -->
-          <p> <p><b>Text aus dem <a href="https://dns-indikatoren.de/publications_reports/">Indikatorenbericht 2022 </a></b><br /><br />Zur Berechnung dieses Indikators ist es unter anderem notwendig, die Masse aller Rohstoffe zu ermitteln, die für die Produktion der Importe benötigt wurden. Die Berechnung dieser als Importe in Rohstoffäquivalenten bezeichneten Größe basiert auf einem komplexen Modell, das Daten aus verschiedenen amtlichen und nicht amtlichen Quellen nutzt.<br /><br />Durch die monetäre sowie physische Einbeziehung der Importe berücksichtigt der Indikator Wertschöpfung und Rohstoffeinsatz über die gesamte in- und ausländische Produktionskette. Somit wird auch der wirtschaftlichen Verflechtung mit dem Ausland umfassend Rechnung getragen. Der im Indikator abgebildete Rohstoffeinsatz dient nicht allein der inländischen letzten Verwendung, sondern auch dem Export. Er darf daher nicht mit einem Rohstofffußabdruck Deutschlands verwechselt werden.<br /><br />Der Indikator umfasst neben nicht erneuerbaren Rohstoffen (mineralische Rohstoffe und fossile Energieträger) auch pflanzliche Erzeugnisse, die von der Land- und Forstwirtschaft produziert werden. Dadurch ergeben sich in geringem Umfang Doppelzählungen: Beispielsweise wird die Masse sowohl eines landwirtschaftlichen Erzeugnisses bei der Ernte als auch des für diese Produktion verwendeten Mineraldüngers erfasst.<br /><br />Der Wert des Indikators nahm von 2000 bis 2018 um 26 % zu. Dieser Anstieg rührt insbesondere von den Zuwächsen des Zählers her: Der Wert der letzten Verwendung (inländischer Konsum und inländische Investitionen sowie Exporte) erhöhte sich im Vergleichszeitraum um 46 %. Die inländische Rohstoffentnahme sank zwar zwischen den Jahren 2000 und 2018 moderat; gleichzeitig stieg jedoch die Masse der Importe in Rohstoffäquivalenten an, sodass sich in Summe für den Nenner des Indikators ein Zuwachs um 16 % ergab.<br /><br />Inländisch entnommene Rohstoffe sowie Importe werden in zunehmendem Maße auch (wieder) exportiert. Der Nenner des Indikators weist folglich nicht auf eine verstärkte globale Rohstoffentnahme für Konsum und Investitionen in Deutschland hin, sondern spiegelt eine insgesamt intensivere Verflechtung der deutschen Wirtschaft mit dem Ausland wider.<br /><br />Das Jahr 2009 ist durch die besondere wirtschaftliche Situation in der europäischen Finanzmarkt- und Wirtschaftskrise als Ausreißer zu betrachten. In den Jahren 2010 und 2011 nahmen Investitionen und Exporte sowie der damit verbundene Rohstoffeinsatz wieder merklich zu, sodass sich die Gesamtrohstoffproduktivität 2011 wieder auf dem Niveau von 2008 befand. Seitdem ist die Gesamtrohstoffproduktivität tendenziell gestiegen, wobei sie zwischenzeitlich auch stagnierte oder leichte Rückgänge verzeichnete. Am aktuellen Rand nahm der Wert des Indikators 2017 um 5 Prozentpunkte gegenüber dem Vorjahr zu, um 2018 einen leichten Rückgang von 1 Prozentpunkt zu registrieren. Insgesamt nahm die Gesamtrohstoffproduktivität im Zeitraum von 2010 bis 2018 um 9 Prozentpunkte zu. Damit lag ihr durchschnittliches jährliches Wachstum bei etwa 0,9 % und somit unter dem Zielpfad der Bundesregierung.</p>
- </p>
-        
-      
-
-      <!-- weather -->
-      
-
-      
-    
-  
-  
   
   
   
@@ -2790,8 +2738,6 @@ data-event-label="Change to indicator.sources tab"
           <!--  -->
           
 <table class="table" style="width:100%; table-layout: fixed;">
-  
-  
   
   
   
@@ -5251,8 +5197,6 @@ data-event-label="Change to indicator.sources tab"
   
   
   
-  
-  
       
         
       
@@ -5570,12 +5514,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/site/assets/js/sdg.js?v=20240228093200'></script>
+<script src='/site/assets/js/sdg.js?v=20240228095334'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20240228093200"></script><script>
+    <script src="/site/assets/js/custom.js?v=20240228095334"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
