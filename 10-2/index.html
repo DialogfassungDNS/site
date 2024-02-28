@@ -148,7 +148,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240228101742">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240228142035">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -386,10 +386,12 @@ data-event-label="high"
         <div>
           <h1>
             
-              <h1 class="titles goal-10" title="Bereich: Verteilungsgerechtigkeit" >
+              <h1 class="titles goal-10" title="Bereich: Verteilungsgerechtigkeit"  style="color: grey" >
                 Verteilungsgerechtigkeit – <i title="Postulat: Zu große Ungleichheit innerhalb Deutschlands verhindern">Zu große Ungleichheit innerhalb Deutschlands verhindern</i>
               </h1>
-              <h2 class="titles goal-10" >Indikator 10.2: Gini-Koeffizient des Einkommens nach Sozialtransfers
+              <h2 class="titles goal-10"  style="color: grey" >Indikator 10.2: Gini-Koeffizient des Einkommens nach Sozialtransfers
+                
+                  <br> <i class="fa fa-times" style="margin-top:10px"></i> Keine Änderungen <i class="fa fa-times"></i>
                 
             </h2>
             
@@ -463,22 +465,6 @@ data-event-label="high"
   
 
   
-
-<div class="row" id="page-content">
-  <div class="col-xs-12">
-    <div>
-  <div class="my-header">
-    <label class="default">Gini-Koeffizient Einkommen nach Sozialtransfer: bis 2030&nbsp;unterhalb des <abbr title="Europäische Union mit 27&nbsp;Mitgliedsstaaten (ohne das Vereinigte Königreich)" tabindex="0">EU-27</abbr>-Wertes
-    </label>
-  </div>
-</div>
-<div class="my-header-note">
-  <label class="default"><b>(Keine Bewertung möglich)
-  </b></label>
-</div>
-
-  </div>
-</div>
 
 
   
@@ -6820,12 +6806,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/site/assets/js/sdg.js?v=20240228101742'></script>
+<script src='/site/assets/js/sdg.js?v=20240228142035'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20240228101742"></script><script>
+    <script src="/site/assets/js/custom.js?v=20240228142035"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
