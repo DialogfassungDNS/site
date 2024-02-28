@@ -14,7 +14,7 @@
     {% endif %}
     <div role="tabpanel" class="tab-pane {% if forloop.first %}active{% endif %}" id="{{ tab_key }}">
       <article>
-        {% if tab_description %}{{ tab_description | t | markdownify }}{% endif %}
+        <!-- {% if tab_description %}{{ tab_description | t | markdownify }}{% endif %} -->
         {% include {{ tab_include }} scope=tab_key %}
       </article>
     </div>
