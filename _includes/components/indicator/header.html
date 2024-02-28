@@ -17,13 +17,20 @@
         <div>
           <h1>
             {% unless page.indicator.standalone %}
-              <h1 class="titles goal-{{ page.goal.number}}" title="{{ page.t.general.section }}: {{ page.indicator.section }}">
+              <h1 class="titles goal-{{ page.goal.number}}" title="{{ page.t.general.section }}: {{ page.indicator.section }}" {% if page.indicator.dialogue == "old" %} style="color: grey" {% endif %}>
                 {{ page.indicator.section }} – <i title="{{ page.t.general.postulate}}: {{ page.indicator.postulate }}">{{ page.indicator.postulate }}</i>
               </h1>
               <h2 class="titles goal-{{ page.goal.number }}">{{ page.t.general.indicator }} {{ page.indicator.indicator_display }}: {{ page.indicator.indicator_name }}
-              {% if page.indicator.new_indicator %} <br> <i class="fa fa-plus" style="margin-top:10px"></i> Neuer Indikator <i class="fa fa-plus"></i>{% endif %}
-              {% if page.indicator.maintained_indicator %} <br> <i class="fa fa-wrench" style="margin-top:10px"></i> Überarbeiteter Indikator <i class="fa fa-wrench"></i>{% endif %}
-              </h2>
+                {% if indicator.dialogue == "new" %}
+                   <br> <i class="fa fa-plus" style="margin-top:10px"></i> Neuer Indikator <i class="fa fa-plus"></i>
+                {% elsif indicator.dialogue == "revised" %}
+                   <br> <i class="fa fa-wrench" style="margin-top:10px"></i> Überarbeiteter Indikator <i class="fa fa-wrench"></i>
+                {% elsif indicator.dialogue == "target" %}
+                  <br> <i class="fa fa-bullseye" style="margin-top:10px"></i> Neues Ziel <i class="fa fa-bullseye"></i>
+                {% elsif indicator.dialogue == "old" %}
+                  <br> <i class="fa fa-times" style="margin-top:10px"></i> Keine Änderungen <i class="fa fa-times"></i>
+                {% endif %}
+            </h2>
             {% endunless %}
           </h1>
         </div>
