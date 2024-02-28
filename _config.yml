@@ -112,12 +112,12 @@ menu:
         translation_key: menu.1_about_2_sdg_3_indicators
       - path: menu.1_about_2_sdg_3_publications_path
         translation_key: menu.1_about_2_sdg_3_publications
-  - translation_key: menu.1_status
-    dropdown:
-      - path: /status/
-        translation_key: menu.1_status_2_methodology
-      - path: /status_summary/
-        translation_key: menu.1_status_2_overview
+  # - translation_key: menu.1_status
+  #   dropdown:
+  #     - path: /status/
+  #       translation_key: menu.1_status_2_methodology
+  #     - path: /status_summary/
+  #       translation_key: menu.1_status_2_overview
   - translation_key: menu.1_strategy
     dropdown:
     - path: /strategy/federal_government/
