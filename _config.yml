@@ -43,7 +43,6 @@ email_contacts:
 ###################################################################################################
 
 
-
 # Build settings
 markdown: kramdown
 
@@ -169,7 +168,7 @@ metadata_tabs:
   - scope: sources
     title: indicator.sources
     description: ''
-    
+
 # Configure the text (or "translation key") to be used on the
 # non-global metadata tab.
 non_global_metadata: indicator.national_metadata
