@@ -326,8 +326,16 @@
           "status": "complete"
         },
         {
-          "id": "8-6",
+          "id": "8-5-c",
           "title": "Tarifvertragliche Abdeckung von Beschäftigten",
+          "description": "",
+          "keywords": "",
+          "href": "/site/8-5-c/",
+          "status": "complete"
+        },
+        {
+          "id": "8-6",
+          "title": "global_indicators.8-6-title",
           "description": "",
           "keywords": "",
           "href": "/site/8-6/",
