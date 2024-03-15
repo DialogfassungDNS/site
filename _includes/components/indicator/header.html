@@ -17,7 +17,7 @@
         <div>
           <h1>
             {% unless page.indicator.standalone %}
-              <h1 class="titles goal-{{ page.goal.number }}" {% if page.indicator.dialogue == "old" %} style="color: grey" {% endif %}>
+              <h1 class="titles goal-{{ page.goal.number }}" {% if page.indicator.dialogue == "old" or page.indicator.dialogue == "deleted" %} style="color: grey" {% endif %}>
                 {% unless page.indicator.standalone %}
                 {{ page.t.general.indicator }} {{ page.indicator.number }}
                 {% endunless %}
@@ -31,6 +31,8 @@
                     <br> <i class="fa fa-bullseye" style="margin-top:10px"></i> Neues Ziel
                   {% elsif page.indicator.dialogue == "old" %}
                     <br> <i class="fa fa-times" style="margin-top:10px"></i> Keine Änderungen
+                  {% elsif page.indicator.dialogue == "deleted" %}
+                    <br> <i class="fa fa-trash" style="margin-top:10px"></i> Gelöschter Indikator
                   {% endif %}
               </h1>
             {% endunless %}
