@@ -86,24 +86,22 @@
       {%- assign range_title_key = range_id  | append: '-title' -%}
       {%- assign target_range = page.t.dns_ranges[ range_title_key ] -%}
       {%- assign target = page.t.dns_targets[ target_title_key ] -%}
-
       <div class="row">
         <div class="col indicator-cards target goal-target no-gutters">
           <div class="row range-and-postulate">
             <span class="indicator-card-number">
-            <p {% if target_range == last_range %} style="margin-bottom: 0px; visibility: hidden" {% else %} style="margin-bottom: 0px;" {% endif %}>
               {{ target_range }}
-            </p>
             </span>
             <p class="postulate">
               {{ target }}
             </p>
           </div>
         </div>
-        {% assign last_range = target_range %}
+
         <div class="col indicator-cards no-gutters">
 
           {% for indicator in group.items %}
+
             {% assign tag_classes = "" | split: "," %}
             {% if indicator.tags %}
               {% for tag in indicator.tags %}
@@ -115,19 +113,18 @@
             {% if indicator.progress_status and indicator.progress_status != '' %}
               {% assign indicator_has_progress = true %}
             {% endif %}
-            {% assign goal_number = indicator.goal %}
 
             <div class="row" style="margin-bottom: 25px;">
               {% if indicator.placeholder and indicator.placeholder != '' %}
-              <span class="indicator-card-number" {% if indicator.dialogue == "old" %} style="color: grey" {% endif %}>
+              <span class="indicator-card-number">
                 {{ indicator.indicator_display }}
               </span>
               {{ indicator.placeholder }}
               {% else %}
-              <span class="indicator-card-number" {% if indicator.dialogue == "old" %} style="color: grey" {% endif %}>
+              <span class="indicator-card-number" >
                 {{ indicator.indicator_display }}
               </span>
-              <a class="indicator-link-goal-page" href="{{ indicator.url }}" {% if indicator.dialogue == "old" %} style="color: grey" {% endif %}>
+              <a class="indicator-link-goal-page" href="{{ indicator.url }}" >
                 {{ indicator.name }}
               </a>
               <p class="titles goal-{{ goal_number }}" {% if indicator.dialogue == "old" %} style="margin-bottom: 0px; padding-left: 0px; color: grey" {% else %} style="margin-bottom: 0px; padding-left: 0px;" {% endif %}>
