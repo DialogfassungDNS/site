@@ -454,11 +454,11 @@
           "status": "complete"
         },
         {
-          "id": "11-4",
+          "id": "11-4-x",
           "title": "Zahl der Objekte in der Deutschen Digitalen Bibliothek",
           "description": "",
           "keywords": "",
-          "href": "/site/11-4/",
+          "href": "/site/11-4-x/",
           "status": "complete"
         }]
     }
@@ -535,18 +535,10 @@
         },
         {
           "id": "13-2",
-          "title": "global_indicators.13-2-title",
-          "description": "",
-          "keywords": "",
-          "href": "/site/13-2/",
-          "status": "complete"
-        },
-        {
-          "id": "13-2-a",
           "title": "Baumkronendichte in städtischen Gebieten",
           "description": "",
           "keywords": "",
-          "href": "/site/13-2-a/",
+          "href": "/site/13-2/",
           "status": "complete"
         }]
     }
@@ -623,10 +615,18 @@
         
         {
           "id": "16-1",
-          "title": "Fördervolumen der Bundesregierung für Projekte sowie Anzahl der durch Fachpersonal der Bundeswehr ausgebildeten Personen zur Stärkung der Kontrolle von Kleinwaffen und leichten Waffen sowie dazugehöriger Munition weltweit",
+          "title": "Anzahl der durch Fachpersonal der Bundeswehr ausgebildete Personen zur Stärkung der Kontrolle von Klein-waffen und leichten Waffen sowie dazugehöriger Munition weltweit",
           "description": "",
           "keywords": "",
           "href": "/site/16-1/",
+          "status": "complete"
+        },
+        {
+          "id": "16-1-x",
+          "title": "Straftaten",
+          "description": "",
+          "keywords": "",
+          "href": "/site/16-1-x/",
           "status": "complete"
         },
         {
@@ -655,7 +655,7 @@
         },
         {
           "id": "17-2",
-          "title": "Anzahl der Studierenden und Forschenden aus Entwicklungsländern sowie aus am wenigsten entwickelten Ländern pro Jahr",
+          "title": "AStudierende und Forschende aus Entwicklungsländern sowie aus am wenigsten entwickelten Ländern pro Jahr",
           "description": "",
           "keywords": "",
           "href": "/site/17-2/",
