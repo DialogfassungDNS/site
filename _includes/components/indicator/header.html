@@ -17,13 +17,12 @@
         <div>
           <h1>
             {% unless page.indicator.standalone %}
-            <h1 class="titles goal-{{ page.goal.number }}">
+            <h1 class="titles goal-{{ page.goal.number }}" {% if page.indicator.dialogue == "old" %} style="color: grey" {% endif %}>
               {% unless page.indicator.standalone %}
               {{ page.t.general.indicator }} {{ page.indicator.number }}
               {% endunless %}
               <span class="lead-copy">{{ page.indicator.indicator_name }}</span>
             </h1>
-              <h2 class="titles goal-{{ page.goal.number }}" {% if page.indicator.dialogue == "old" %} style="color: grey" {% endif %}>{{ page.t.general.indicator }} {{ page.indicator.indicator_display }}: {{ page.indicator.indicator_name }}
                 {% if page.indicator.dialogue == "new" %}
                    <br> <i class="fa fa-plus" style="margin-top:10px"></i> Neuer Indikator <i class="fa fa-plus"></i>
                 {% elsif page.indicator.dialogue == "revised" %}
@@ -33,7 +32,6 @@
                 {% elsif page.indicator.dialogue == "old" %}
                   <br> <i class="fa fa-times" style="margin-top:10px"></i> Keine Änderungen <i class="fa fa-times"></i>
                 {% endif %}
-            </h2>
             {% endunless %}
           </h1>
         </div>
