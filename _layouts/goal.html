@@ -90,14 +90,16 @@
         <div class="col indicator-cards target goal-target no-gutters">
           <div class="row range-and-postulate">
             <span class="indicator-card-number">
-              {{ target_range }}
+              <p {% if target_range == last_range %} style="margin-bottom: 0px; visibility: hidden" {% else %} style="margin-bottom: 0px;" {% endif %}>
+                {{ target_range }}
+              </p>
             </span>
             <p class="postulate">
               {{ target }}
             </p>
           </div>
         </div>
-
+        {% assign last_range = target_range %}
         <div class="col indicator-cards no-gutters">
 
           {% for indicator in group.items %}

@@ -24,13 +24,13 @@
               <span class="lead-copy">{{ page.indicator.indicator_name }}</span>
             </h1>
                 {% if page.indicator.dialogue == "new" %}
-                   <br> <i class="fa fa-plus" style="margin-top:10px"></i> Neuer Indikator <i class="fa fa-plus"></i>
+                   <br> <i class="fa fa-plus" style="margin-top:10px"></i> Neuer Indikator
                 {% elsif page.indicator.dialogue == "revised" %}
-                   <br> <i class="fa fa-wrench" style="margin-top:10px"></i> Überarbeiteter Indikator <i class="fa fa-wrench"></i>
+                   <br> <i class="fa fa-wrench" style="margin-top:10px"></i> Überarbeiteter Indikator
                 {% elsif page.indicator.dialogue == "target" %}
-                  <br> <i class="fa fa-bullseye" style="margin-top:10px"></i> Neues Ziel <i class="fa fa-bullseye"></i>
+                  <br> <i class="fa fa-bullseye" style="margin-top:10px"></i> Neues Ziel
                 {% elsif page.indicator.dialogue == "old" %}
-                  <br> <i class="fa fa-times" style="margin-top:10px"></i> Keine Änderungen <i class="fa fa-times"></i>
+                  <br> <i class="fa fa-times" style="margin-top:10px"></i> Keine Änderungen
                 {% endif %}
             {% endunless %}
           </h1>
