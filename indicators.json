@@ -12,14 +12,6 @@
           "keywords": "",
           "href": "/site/1-1-ab/",
           "status": "complete"
-        },
-        {
-          "id": "1-1-c",
-          "title": "Prävention Verbraucherverschuldung",
-          "description": "",
-          "keywords": "",
-          "href": "/site/1-1-c/",
-          "status": "complete"
         }]
     }
   },
@@ -62,11 +54,35 @@
       "indicators": [
         
         {
-          "id": "3-1-a",
+          "id": "3-1-ab",
           "title": "Durch Prävention und Behandlung vermeidbare Sterblichkeit",
           "description": "",
           "keywords": "",
-          "href": "/site/3-1-a/",
+          "href": "/site/3-1-ab/",
+          "status": "complete"
+        },
+        {
+          "id": "3-1-cd",
+          "title": "Raucherquote von Jugendlichen und Erwachsenen",
+          "description": "",
+          "keywords": "",
+          "href": "/site/3-1-cd/",
+          "status": "complete"
+        },
+        {
+          "id": "3-1-e",
+          "title": "Adipositasquote von Kindern und Jugendlichen",
+          "description": "",
+          "keywords": "",
+          "href": "/site/3-1-e/",
+          "status": "complete"
+        },
+        {
+          "id": "3-1-f",
+          "title": "Adipositasquote von Erwachsenen",
+          "description": "",
+          "keywords": "",
+          "href": "/site/3-1-f/",
           "status": "complete"
         },
         {
@@ -111,7 +127,7 @@
         },
         {
           "id": "4-1-b",
-          "title": "Tertiärer oder postsekundarer nicht-tertiärer Abschluss",
+          "title": "Akademisch Qualifizierte und beruflich Höherqualifizierte",
           "description": "",
           "keywords": "",
           "href": "/site/4-1-b/",
@@ -119,7 +135,7 @@
         },
         {
           "id": "4-1-c",
-          "title": "Zusammenhang zwischen sozialer Herkunft und Bildungserfolg",
+          "title": "Weiterbildungsbeteiligung",
           "description": "",
           "keywords": "",
           "href": "/site/4-1-c/",
@@ -127,7 +143,7 @@
         },
         {
           "id": "4-1-d",
-          "title": "Schulen mit BNE-Schullabel",
+          "title": "Schulen mit BNE-Label (Bildung für nachhaltige Entwicklung)",
           "description": "",
           "keywords": "",
           "href": "/site/4-1-d/",
@@ -135,7 +151,7 @@
         },
         {
           "id": "4-2-ab",
-          "title": "Kinder in Ganztagsbetreuung in Tageseinrichtungen oder Tagespflege",
+          "title": "Ganztagsbetreuung",
           "description": "",
           "keywords": "",
           "href": "/site/4-2-ab/",
@@ -167,7 +183,7 @@
         },
         {
           "id": "5-1-d",
-          "title": "Väterbeteiligung beim Elterngeld",
+          "title": "Väterbeteiligung beim Elterngeld und Väteranteil an den genommenen Elterngeldmonaten",
           "description": "",
           "keywords": "",
           "href": "/site/5-1-d/",
@@ -483,6 +499,14 @@
           "description": "",
           "keywords": "",
           "href": "/site/12-3-abc/",
+          "status": "complete"
+        },
+        {
+          "id": "12-4",
+          "title": "Prävention Verbraucherverschuldung",
+          "description": "",
+          "keywords": "",
+          "href": "/site/12-4/",
           "status": "complete"
         }]
     }
