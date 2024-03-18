@@ -62,6 +62,14 @@
           "status": "complete"
         },
         {
+          "id": "3-1-ab-x",
+          "title": "Vorzeitige Sterblichkeit",
+          "description": "",
+          "keywords": "",
+          "href": "/site/3-1-ab-x/",
+          "status": "complete"
+        },
+        {
           "id": "3-1-cd",
           "title": "Raucherquote von Jugendlichen und Erwachsenen",
           "description": "",
@@ -335,7 +343,7 @@
         },
         {
           "id": "8-6",
-          "title": "global_indicators.8-6-title",
+          "title": "Mitglieder des Textilbündnisses",
           "description": "",
           "keywords": "",
           "href": "/site/8-6/",
@@ -527,7 +535,7 @@
         },
         {
           "id": "13-1-b",
-          "title": "Direkte und indirekte CO2-Emissionen im In- und Ausland bei der Herstellung der Güter für Anlageinvestitionen in Deutschland",
+          "title": "Internationale Klimafinanzierung zur Reduktion von Treibhausgasen und zur Anpassung an den Klimawandel",
           "description": "",
           "keywords": "",
           "href": "/site/13-1-b/",
