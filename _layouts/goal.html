@@ -125,24 +125,24 @@
               {% else %}
               <span class="indicator-card-number" >
                 {{ indicator.indicator_display }}
+                <p class="titles goal-{{ goal_number }}" {% if indicator.dialogue == "old" or indicator.dialogue == "deleted" %} style="margin-bottom: 0px; padding-left: 0px; color: grey" {% else %} style="margin-bottom: 0px; padding-left: 0px;" {% endif %}>
+                  {% if indicator.dialogue == "new" %}
+                    <i class="fa fa-plus" aria-hidden="true"></i> Neuer Indikator
+                  {% elsif indicator.dialogue == "revised" %}
+                    <i class="fa fa-wrench" aria-hidden="true"></i> Überarbeiteter Indikator
+                  {% elsif indicator.dialogue == "target" %}
+                    <i class="fa fa-bullseye" aria-hidden="true"></i> Neues Ziel
+                  {% elsif indicator.dialogue == "old" %}
+                    <i class="fa fa-times" aria-hidden="true"></i> Keine Änderungen
+                  {% elsif indicator.dialogue == "deleted" %}
+                    <i class="fa fa-trash" aria-hidden="true"></i> Gelöschter Indikator
+                  {% endif %}
+                </p>
               </span>
               <a class="indicator-link-goal-page" href="{{ indicator.url }}" >
                 {{ indicator.name }}
               </a>
-              <p class="titles goal-{{ goal_number }}" {% if indicator.dialogue == "old" or indicator.dialogue == "deleted" %} style="margin-bottom: 0px; padding-left: 0px; color: grey" {% else %} style="margin-bottom: 0px; padding-left: 0px;" {% endif %}>
-                {% if indicator.dialogue == "new" %}
-                  <i class="fa fa-plus" aria-hidden="true"></i> Neuer Indikator
-                {% elsif indicator.dialogue == "revised" %}
-                  <i class="fa fa-wrench" aria-hidden="true"></i> Überarbeiteter Indikator
-                {% elsif indicator.dialogue == "target" %}
-                  <i class="fa fa-bullseye" aria-hidden="true"></i> Neues Ziel
-                {% elsif indicator.dialogue == "old" %}
-                  <i class="fa fa-times" aria-hidden="true"></i> Keine Änderungen
-                {% elsif indicator.dialogue == "deleted" %}
-                  <i class="fa fa-trash" aria-hidden="true"></i> Gelöschter Indikator
-                {% endif %}
 
-              </p>
               {% endif %}
             </div>
           {% endfor %}
