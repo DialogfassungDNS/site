@@ -124,8 +124,9 @@
               {{ indicator.placeholder }}
               {% else %}
               <span class="indicator-card-number" >
-                {{ indicator.indicator_display }}
+
                 <p class="titles goal-{{ goal_number }}" {% if indicator.dialogue == "old" or indicator.dialogue == "deleted" %} style="margin-bottom: 0px; padding-left: 0px; color: grey" {% else %} style="margin-bottom: 0px; padding-left: 0px;" {% endif %}>
+                  {{ indicator.indicator_display }}
                   {% if indicator.dialogue == "new" %}
                     <i class="fa fa-plus" aria-hidden="true"></i> Neuer Indikator
                   {% elsif indicator.dialogue == "revised" %}
