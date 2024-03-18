@@ -19,7 +19,7 @@
             {% unless page.indicator.standalone %}
               <h1 class="titles goal-{{ page.goal.number }}" {% if page.indicator.dialogue == "old" or page.indicator.dialogue == "deleted" %} style="color: grey" {% endif %}>
                 {% unless page.indicator.standalone %}
-                {{ page.t.general.indicator }} {{ page.indicator.number }}
+                {{ page.t.general.indicator }} {{ page.indicator.indicator_display }}
                 {% endunless %}
                 <span class="lead-copy">{{ page.indicator.indicator_name }}</span>
 
