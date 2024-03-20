@@ -45,7 +45,7 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
         REPOSITORY_NAME: sustainabledevelopment-deutschland/sustainabledevelopment-deutschland.github.io
-        ACCESS_TOKEN: ${{ secrets.token }}
+        GITHUB_TOKEN: ${{ secrets.token }}
         BRANCH: gh-pages #main
         FOLDER: _site
         CLEAN: true

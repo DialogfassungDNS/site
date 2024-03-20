@@ -3,7 +3,7 @@
 {% else %}
   {% assign language = 'En'' %}
 {% endif %}
-<table class="table" style="width:100%; table-layout: fixed; {% if page.indicator.dialogue == "old" or indicator.dialogue == "deleted" %} color: grey; {% endif %}">
+<table class="table" style="width:100%; table-layout: fixed; {% if page.indicator.dialogue == "old" or page.indicator.dialogue == "deleted" %} color: grey; {% endif %}">
   {% for indicator_metadata in site.data.schema %}
     {%- assign metadata_label = indicator_metadata.name | translate_metadata_field -%}
     {% if indicator_metadata.field.scope == include.scope %}
