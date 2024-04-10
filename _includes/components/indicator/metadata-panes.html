@@ -5,10 +5,7 @@
       {% assign tab_key = tab.scope %}
       {% assign tab_obj = tab %}
     {% endif %}
-    <!-- {% assign tab_description = tab_obj.description | default: tab_obj.blurb %} -->
-    {% if page.indicator.meta_blurb %}
-        {% assign tab_description = page.indicator.meta_blurb %}
-    {% endif %}
+    {% assign tab_description = tab_obj.description | default: tab_obj.blurb %}
     {% assign tab_include = 'components/indicator/metadata.html' %}
     {% if tab_key == 'sources' %}
       {% assign tab_include = 'components/indicator/sources.html' %}
