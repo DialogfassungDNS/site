@@ -7,7 +7,7 @@
     {% endif %}
     <!-- {% assign tab_description = tab_obj.description | default: tab_obj.blurb %} -->
     {% if page.indicator.meta_blurb %}
-        {% assign tab_description = page.indicator.meta_blurb %}
+        {% assign tab_description = page.indicator.meta_blurb | default: '' %}
     {% endif %}
     {% assign tab_include = 'components/indicator/metadata.html' %}
     {% if tab_key == 'sources' %}
