@@ -158,7 +158,7 @@ metadata_tabs:
   #   description: indicator.history_blurb
   - scope: sources
     title: indicator.sources
-    description: ''
+    description: indicator.sources_blurb
 
 # Configure the text (or "translation key") to be used on the
 # non-global metadata tab.
