@@ -6,6 +6,11 @@
       {% assign tab_obj = tab %}
     {% endif %}
     {% assign tab_description = tab_obj.description | default: tab_obj.blurb %}
+    {% if tab.scope == "national" %}
+      {% if page.indicator.meta_blurb %}
+        {% assign tab_description = page.indicator.meta_blurb %}
+      {% endif %}
+    {% endif %}
     {% assign tab_include = 'components/indicator/metadata.html' %}
     {% if tab_key == 'sources' %}
       {% assign tab_include = 'components/indicator/sources.html' %}
