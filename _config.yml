@@ -149,7 +149,7 @@ footer_menu:
 metadata_tabs:
   - scope: national
     title: indicator.details
-    description: indicator.meta_blurb
+    description: ''
   - scope: proposal
     title: Vorschlag
     description: ''
@@ -161,7 +161,7 @@ metadata_tabs:
   #   description: indicator.history_blurb
   - scope: sources
     title: indicator.sources
-    description: indicator.sources_blurb
+    description: ''
 
 # Configure the text (or "translation key") to be used on the
 # non-global metadata tab.
