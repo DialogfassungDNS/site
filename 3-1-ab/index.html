@@ -148,7 +148,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240412110145">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240412111230">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -1212,10 +1212,10 @@ data-event-label="Change to Table tab"
         
         
         
-        <li role="presentation" class="nav-item">
+        <li role="presentation" class="nav-item-custom">
             <button
                 type="button"
-                class="nav-link active goal-3"
+                class="nav-link-custom goal-3 active "
                 data-bs-toggle="tab"
                 id="tab-proposal"
                 data-bs-target="#proposal"
@@ -1233,7 +1233,7 @@ data-event-label="Change to Vorschlag tab"
         
         
         
-        <li role="presentation" class="nav-item">
+        <li role="presentation" class="nav-item-custom">
             <button
                 type="button"
                 class="nav-link  "
@@ -1254,7 +1254,7 @@ data-event-label="Change to indicator.details tab"
         
         
         
-        <li role="presentation" class="nav-item">
+        <li role="presentation" class="nav-item-custom">
             <button
                 type="button"
                 class="nav-link  "
@@ -1308,13 +1308,40 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row" style="text-align: left; width: 150px;">Fachliche Erläuterung des Indikators </th>
+        <td>
+          
+            <p>Der Indikator umfasst die durch Prävention und Behandlung vermeidbaren Todesfälle der weiblichen (3.1.a) und männlichen (3.1.b) unter 75-jährigen Bevölkerung, bezogen auf 100 000 Einwohnerinnen und Einwohner der standardisierten europäischen Bevölkerung unter 75 Jahren.<br /><br />Der Indikator unterscheidet zwischen prävenierbarer und behandelbarer Sterblichkeit. Die Summe ergibt die vermeidbare Sterblichkeit. Die Auswahl der Todesursachen bezieht sich auf die <a href="https://ec.europa.eu/eurostat/cache/metadata/Annexes/hlth_cdeath_sims_an_5.pdf" target="_blank">OECD-Eurostat Liste</a>.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
       
       
-        
+      
+      <tr>
+        <th scope="row" style="text-align: left; width: 150px;">Vorschlag für (möglichst) quatifiziertes Ziel </th>
+        <td>
           
+            <p>a) Frauen, b) Männer: 2030: Gesamt: 200 pro 100 000 Einwohnerinnen und Einwohner</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
   
   
   
@@ -2153,25 +2180,16 @@ data-event-label="Change to indicator.sources tab"
   
   
   
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
+  
       
       
       
       
       <tr>
-        <th scope="row" style="text-align: left; width: 150px;">Beschreibung </th>
+        <th scope="row" style="text-align: left; width: 150px;">Definition </th>
         <td>
           
-            <p>Der Indikator umfasst die durch Prävention und Behandlung vermeidbaren Todesfälle der weiblichen (3.1.a) und männlichen (3.1.b) unter 75-jährigen Bevölkerung, bezogen auf 100 000 Einwohnerinnen und Einwohner der standardisierten europäischen Bevölkerung unter 75 Jahren.<br /><br />Der Indikator unterscheidet zwischen prävenierbarer und behandelbarer Sterblichkeit. Die Summe ergibt die vermeidbare Sterblichkeit. Die Auswahl der Todesursachen bezieht sich auf die <a href="https://ec.europa.eu/eurostat/cache/metadata/Annexes/hlth_cdeath_sims_an_5.pdf" target="_blank">OECD-Eurostat Liste</a>.</p>
+            <p>Der Indikator umfasst die Todesfälle der weiblichen (3.1.a) und männlichen (3.1.b) unter 70-jährigen Bevölkerung, bezogen auf 100 000 Einwohnerinnen und Einwohner der alten Europastandardbevölkerung unter 70 Jahren (unter Ausschluss der unter 1-Jährigen).</p>
 
           
         </td>
@@ -2187,12 +2205,22 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
       
       <tr>
         <th scope="row" style="text-align: left; width: 150px;">Ziel </th>
         <td>
           
-            <p>a) Frauen, b) Männer: 2030: Gesamt: 200 pro 100 000 EW</p>
+            <p>Bis zum Jahr 2030 soll die vorzeitige Sterblichkeit bei Frauen bei höchstens 100 und bei Männern bei höchstens 190 Todesfällen je 100 000 Einwohnerinnen und Einwohnern liegen.</p>
 
           
         </td>
@@ -3770,6 +3798,7 @@ data-event-label="Change to indicator.sources tab"
   
   
   
+  
       
       
       
@@ -4047,12 +4076,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/site/assets/js/sdg.js?v=20240412110145'></script>
+<script src='/site/assets/js/sdg.js?v=20240412111230'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20240412110145"></script><script>
+    <script src="/site/assets/js/custom.js?v=20240412111230"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
