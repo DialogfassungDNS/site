@@ -136,7 +136,9 @@
                   {% elsif indicator.dialogue == "old" %}
                     <i class="fa fa-times" aria-hidden="true"></i> Keine Änderungen
                   {% elsif indicator.dialogue == "deleted" %}
-                    <i class="fa fa-trash" aria-hidden="true"></i> Gelöschter Indikator
+                    <i class="fa fa-trash" aria-hidden="true"></i> Nicht mehr im Set enthalten
+                  {% elsif indicator.dialogue == "revised_and_target" %}
+                    <i class="fa fa-wrench" style="margin-top:10px"></i> <i class="fa fa-bullseye" style="margin-top:10px"></i> Überarbeiteter Indikator und neues Ziel
                   {% endif %}
                 </p>
               </span>

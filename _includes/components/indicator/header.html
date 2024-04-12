@@ -32,7 +32,9 @@
                   {% elsif page.indicator.dialogue == "old" %}
                     <br> <i class="fa fa-times" style="margin-top:10px"></i> Keine Änderungen
                   {% elsif page.indicator.dialogue == "deleted" %}
-                    <br> <i class="fa fa-trash" style="margin-top:10px"></i> Gelöschter Indikator
+                    <br> <i class="fa fa-trash" style="margin-top:10px"></i> Nicht mehr im Set enthalten
+                  {% elsif page.indicator.dialogue == "revised_and_target" %}
+                    <br> <i class="fa fa-wrench" style="margin-top:10px"></i> <i class="fa fa-bullseye" style="margin-top:10px"></i> Überarbeiteter Indikator und neues Ziel
                   {% endif %}
               </h1>
             {% endunless %}
