@@ -20,7 +20,7 @@
                 aria-controls="{{ tab_key }}"
                 role="tab"
                 {% include autotrack.html preset=tab_preset category="Tab change" action="Change metadata view" label=tab_label %}
-            >{{ tab_obj.title | t }}</button>
+                style="color: #{{ page.color}};">{{ tab_obj.title | t }}</button>
         </li>
     {% endfor %}
     {% else %}
