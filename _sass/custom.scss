@@ -292,7 +292,7 @@ body{
      background-color: darken($background-c,10%);
    }
    &.nav-link {
-     color: darken($background-c,10%);
+     background-color: darken($background-c,10%);
    }
  }
 }
