@@ -18,6 +18,8 @@
     {% elsif tab_key == 'history_1'  %}
       {% assign tab_include = 'components/indicator/history.html' %}
     {% endif %}
+    {% unless tab_key == 'national' and page.indicator.dialogue = 'new' %}
+
     <div role="tabpanel" class="tab-pane {% if forloop.first %}active{% endif %}" id="{{ tab_key }}">
       <article>
         {% if tab_description %}
@@ -26,6 +28,7 @@
         {% include {{ tab_include }} scope=tab_key %}
       </article>
     </div>
+    {% endunless %}
     {% endfor %}
   {% else %}
     {% include components/indicator/metadata-panes-default.html %}
