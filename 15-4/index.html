@@ -148,7 +148,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240412114904">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240412130820">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -1053,7 +1053,7 @@ data-event-label="Change to Table tab"
         <li role="presentation" class="nav-item custom goal-15 ">
             <button
                 type="button"
-                class="nav-link active "
+                class="nav-link custom goal-15 active "
                 data-bs-toggle="tab"
                 id="tab-proposal"
                 data-bs-target="#proposal"
@@ -1074,7 +1074,7 @@ data-event-label="Change to Vorschlag tab"
         <li role="presentation" class="nav-item  ">
             <button
                 type="button"
-                class="nav-link  "
+                class="nav-link   "
                 data-bs-toggle="tab"
                 id="tab-national"
                 data-bs-target="#national"
@@ -1095,7 +1095,7 @@ data-event-label="Change to indicator.details tab"
         <li role="presentation" class="nav-item  ">
             <button
                 type="button"
-                class="nav-link  "
+                class="nav-link   "
                 data-bs-toggle="tab"
                 id="tab-sources"
                 data-bs-target="#sources"
@@ -1136,28 +1136,61 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row" style="text-align: left; width: 150px;">Betroffene Ressorts </th>
+        <td>
+          
+            <p>Bundesministerium für Umwelt, Naturschutz, nukleare Sicherheit und Verbraucherschutz (BMUV)<br />Bundesministerium für Wohnen, Stadtentwicklung und Bauwesen (BMWSB)</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
       
       
+      
+      <tr>
+        <th scope="row" style="text-align: left; width: 150px;">Fachliche Erläuterung des Indikators </th>
+        <td>
+          
+            <p>Der Indikator basiert auf Daten des europäischen Copernicus-Programms zum Versiegelungsgrad. Eine Fläche gilt dabei als versiegelt, wenn sie bebaut, betoniert, asphaltiert, gepflastert oder auf andere Art langfristig befestigt ist. Zur Erstellung dieses Datensatzes werden Satellitendaten automatisiert ausgewertet und für jede betrachtete Flächenzelle der Anteil der versiegelten Fläche berechnet und anschließend der entsprechende Mittelwert gebildet. In diesen Datensatz fließen also keine Informationen aus Katastern oder ähnlichen Quellen ein, sondern er basiert ausschließlich auf Informationen, die sich aus der Fernerkundung der Erdoberfläche ableiten lassen.<br />Der Indikator kann sowohl<br />•	für ganz Deutschland<br />•	für die Fläche von Städten ab einer frei definierten Größe oder<br />•	für alle städtische Gebiete (z. B. Ortslagen nach Bundesamt für Kartographie und Geodäsie (BKG) oder städtischen Gebieten nach der EU Definition DEGURBA)<br />zunächst im 3-Jährigen Rhythmus und ab 2024 voraussichtlich rückwirkend bis 2017 jährlich berechnet werden.<br />Seit dem Berichtsjahr 2018 liegen Daten in einer höheren Auflösung vor, sodass die Bodenversiegelung ab 2018 räumlich detaillierter und realistischer abgebildet wird.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
       
       
-        
+      
+      <tr>
+        <th scope="row" style="text-align: left; width: 150px;">Vorschlag für (möglichst) quatifiziertes Ziel </th>
+        <td>
           
-      
-      
-      
-        
+            <p>Sinkende Zunahme der Bodenversiegelung</p>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
-          
+      
+  
   
   
   
@@ -2010,19 +2043,8 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-      
-      <tr>
-        <th scope="row" style="text-align: left; width: 150px;">Beschreibung </th>
-        <td>
-          
-            <p>Der Indikator gibt den Anteil der versiegelten Fläche an der Gesamtfläche Deutschlands wieder. Eine Fläche gilt als versiegelt, wenn sie bebaut, betoniert, asphaltiert, gepflastert oder auf andere Art langfristig befestigt ist.</p>
-
-          
-        </td>
-        </tr>
         
-      
-  
+          
       
       
       
@@ -2031,19 +2053,8 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-      
-      <tr>
-        <th scope="row" style="text-align: left; width: 150px;">Ziel </th>
-        <td>
-          
-            <p>Sinkende Zunahme der Bodenversiegelung</p>
-
-          
-        </td>
-        </tr>
         
-      
-  
+          
       
       
       
@@ -4776,12 +4787,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/site/assets/js/sdg.js?v=20240412114904'></script>
+<script src='/site/assets/js/sdg.js?v=20240412130820'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20240412114904"></script><script>
+    <script src="/site/assets/js/custom.js?v=20240412130820"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
