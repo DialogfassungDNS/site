@@ -150,6 +150,9 @@ metadata_tabs:
   - scope: national
     title: indicator.details
     description: indicator.meta_blurb
+  - scope: proposal
+    title: Vorschlag
+    description: ''
   # - scope: content
   #   title: indicator.contentAndProgress
   #   description: ''
