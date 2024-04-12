@@ -18,7 +18,7 @@
     {% elsif tab_key == 'history_1'  %}
       {% assign tab_include = 'components/indicator/history.html' %}
     {% endif %}
-    {% unless tab_key == 'national' and page.indicator.dialogue = 'new' %}
+    {% unless tab_key == 'national' and page.indicator.dialogue == 'new' %}
 
     <div role="tabpanel" class="tab-pane {% if forloop.first %}active{% endif %}" id="{{ tab_key }}">
       <article>
