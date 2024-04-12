@@ -10,7 +10,7 @@
         {% endif %}
         {% assign tab_preset = "tab_meta_" | append: tab_key %}
         {% assign tab_label = "Change to " | append: tab_obj.title | append: " tab" %}
-        <li role="presentation" class="nav-item{% if tab_key == 'proposal' %}-custom goal-{{ page.goal.number }}{% endif %} ">
+        <li role="presentation" class="nav-item {% if tab_key == 'proposal' %}custom goal-{{ page.goal.number }}{% endif %} ">
             <button
                 type="button"
                 class="nav-link {% if forloop.first %}active{% endif %} "

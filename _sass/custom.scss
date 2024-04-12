@@ -291,8 +291,10 @@ body{
    &.navigation-btn:hover {
      background-color: darken($background-c,10%);
    }
-   &.nav-item-custom {
+   &.nav-item {
+     &.custom {
      color: darken($background-c,10%);
+     }
    }
  }
 }
