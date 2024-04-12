@@ -13,7 +13,7 @@
         <li role="presentation" class="nav-item {% if tab_key == 'proposal' %}custom goal-{{ page.goal.number }}{% endif %} ">
             <button
                 type="button"
-                class="nav-link {% if forloop.first %}active{% endif %} "
+                class="nav-link {% if tab_key == 'proposal' %}custom goal-{{ page.goal.number }}{% endif %} {% if forloop.first %}active{% endif %} "
                 data-bs-toggle="tab"
                 id="tab-{{ tab_key }}"
                 data-bs-target="#{{ tab_key }}"
