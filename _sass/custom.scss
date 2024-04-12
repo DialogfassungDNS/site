@@ -504,7 +504,7 @@ abbr[title]:focus::after {
                 border: none;
                 margin-right: 0;
                 text-decoration: underline;
-                color: #0b0c0c !default;
+                color: $color-dark;
             }
             &.active {
                 background-color: $tabs-backgroundColor-active;
