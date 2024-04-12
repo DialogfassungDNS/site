@@ -147,12 +147,13 @@ footer_menu:
     translation_key: menu.imprint
 
 metadata_tabs:
-  - scope: national
-    title: indicator.details
-    description: ''
   - scope: proposal
     title: Vorschlag
     description: ''
+  - scope: national
+    title: indicator.details
+    description: ''
+
   # - scope: content
   #   title: indicator.contentAndProgress
   #   description: ''
