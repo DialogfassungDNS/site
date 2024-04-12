@@ -24,7 +24,7 @@
                   aria-controls="{{ tab_key }}"
                   role="tab"
                   {% include autotrack.html preset=tab_preset category="Tab change" action="Change metadata view" label=tab_label %}
-                  {% if tab_key == 'proposal' %}style="color: #{{ page.indicator.color}};"{% endif %}
+                  {% if tab_key == 'proposal' %}style="color: #{{ page.indicator.color}}; font-weight: bold;"{% endif %}
                   >{{ tab_obj.title | t }}</button>
           </li>
         {% endif %}
