@@ -11,22 +11,23 @@
             {% continue %}
         {% elsif tab_key == 'proposal' and page.indicator.dialogue == 'deleted' %}
             {% continue %}
+        {% else %}
+          {% assign tab_preset = "tab_meta_" | append: tab_key %}
+          {% assign tab_label = "Change to " | append: tab_obj.title | append: " tab" %}
+          <li role="presentation" class="nav-item">
+              <button
+                  type="button"
+                  class="nav-link {% if forloop.first %}active{% endif %} "
+                  data-bs-toggle="tab"
+                  id="tab-{{ tab_key }}"
+                  data-bs-target="#{{ tab_key }}"
+                  aria-controls="{{ tab_key }}"
+                  role="tab"
+                  {% include autotrack.html preset=tab_preset category="Tab change" action="Change metadata view" label=tab_label %}
+                  {% if tab_key == 'proposal' %}style="color: #{{ page.indicator.color}};"{% endif %}
+                  >{{ tab_obj.title | t }}</button>
+          </li>
         {% endif %}
-        {% assign tab_preset = "tab_meta_" | append: tab_key %}
-        {% assign tab_label = "Change to " | append: tab_obj.title | append: " tab" %}
-        <li role="presentation" class="nav-item">
-            <button
-                type="button"
-                class="nav-link {% if forloop.first %}active{% endif %} "
-                data-bs-toggle="tab"
-                id="tab-{{ tab_key }}"
-                data-bs-target="#{{ tab_key }}"
-                aria-controls="{{ tab_key }}"
-                role="tab"
-                {% include autotrack.html preset=tab_preset category="Tab change" action="Change metadata view" label=tab_label %}
-                {% if tab_key == 'proposal' %}style="color: #{{ page.indicator.color}};"{% endif %}
-                >{{ tab_obj.title | t }}</button>
-        </li>
     {% endfor %}
     {% else %}
         {% include components/indicator/metadata-tabs-default.html %}
