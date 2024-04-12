@@ -1,13 +1,11 @@
 <div class="tab-content">
   {% if site.metadata_tabs and site.metadata_tabs.size > 0 %}
     {% for tab in site.metadata_tabs %}
-    {% if forloop.first %}
-      {% assign case = 'active' %}
-    {% elsif tab.scope == 'national' and page.indicator.dialogue == 'old'  %}
-      {% assign case = 'active' %}
-    {% else %}
-      {% assign case = 'inactive' %}
+
+    {% if tab.scope == 'proposal' and page.indicator.dialogue == 'old' %}
+      {% continue %}
     {% endif %}
+
     {% if tab.scope %}
       {% assign tab_key = tab.scope %}
       {% assign tab_obj = tab %}
@@ -28,7 +26,7 @@
     {% endif %}
 
 
-    <div role="tabpanel" class="tab-pane {% if case == 'active' %}active{% endif %}" id="{{ tab_key }}">
+    <div role="tabpanel" class="tab-pane {% if forloop.first %}active{% endif %}" id="{{ tab_key }}">
       <article>
         {% if tab_description %}
           {{ tab_description | t | markdownify }}
