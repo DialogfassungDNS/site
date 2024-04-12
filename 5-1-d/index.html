@@ -148,7 +148,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240412104840">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240412110145">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -1409,28 +1409,7 @@ data-event-label="Change to Table tab"
         <li role="presentation" class="nav-item">
             <button
                 type="button"
-                class="nav-link active "
-                data-bs-toggle="tab"
-                id="tab-national"
-                data-bs-target="#national"
-                aria-controls="national"
-                role="tab"
-                data-on="click"
-data-event-category="Tab change"
-data-event-action="Change metadata view"
-data-event-label="Change to indicator.details tab"
-
-            >Details</button>
-        </li>
-    
-        
-        
-        
-        
-        <li role="presentation" class="nav-item">
-            <button
-                type="button"
-                class="nav-link  goal-5"
+                class="nav-link active goal-5"
                 data-bs-toggle="tab"
                 id="tab-proposal"
                 data-bs-target="#proposal"
@@ -1442,6 +1421,27 @@ data-event-action="Change metadata view"
 data-event-label="Change to Vorschlag tab"
 
             >Vorschlag</button>
+        </li>
+    
+        
+        
+        
+        
+        <li role="presentation" class="nav-item">
+            <button
+                type="button"
+                class="nav-link  "
+                data-bs-toggle="tab"
+                id="tab-national"
+                data-bs-target="#national"
+                aria-controls="national"
+                role="tab"
+                data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to indicator.details tab"
+
+            >Details</button>
         </li>
     
         
@@ -1476,8 +1476,11 @@ data-event-label="Change to indicator.sources tab"
     
     
     
-    <div role="tabpanel" class="tab-pane active" id="national">
+    <div role="tabpanel" class="tab-pane active" id="proposal">
       <article>
+        
+          <p>Der Vorschlag zur Überarbeitung des Indikators wurde eingebracht vom Bundesministerium für Familie, Senioren, Frauen und Jugend (BMFSFJ).</p>
+
         
         <table class="table" style="width:100%; table-layout: fixed; ">
   <tbody>
@@ -1486,68 +1489,6 @@ data-event-label="Change to indicator.sources tab"
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-      
-      <tr>
-        <th scope="row" style="text-align: left; width: 150px;">Überarbeitung </th>
-        <td>
-          
-            <p>Ergänzung Väteranteil an genommenen Elterngeldmonaten</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-      
-      <tr>
-        <th scope="row" style="text-align: left; width: 150px;">Ziel </th>
-        <td>
-          
-            <p>da) Väterbeteiligung beim Elterngeld: Anstieg auf 65 Prozent bis 2030<br />db) Väteranteil an den genommenen Elterngeldmonaten: Anstieg auf 12 Prozent bis 2030</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
       
       
       
@@ -1568,6 +1509,26 @@ data-event-label="Change to indicator.sources tab"
       
         
           
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -2361,11 +2322,8 @@ data-event-label="Change to indicator.sources tab"
     
     
     
-    <div role="tabpanel" class="tab-pane " id="proposal">
+    <div role="tabpanel" class="tab-pane " id="national">
       <article>
-        
-          <p>Der Vorschlag zur Überarbeitung des Indikators wurde eingebracht vom Bundesministerium für Familie, Senioren, Frauen und Jugend (BMFSFJ).</p>
-
         
         <table class="table" style="width:100%; table-layout: fixed; ">
   <tbody>
@@ -2374,6 +2332,68 @@ data-event-label="Change to indicator.sources tab"
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row" style="text-align: left; width: 150px;">Überarbeitung </th>
+        <td>
+          
+            <p>Ergänzung Väteranteil an genommenen Elterngeldmonaten</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row" style="text-align: left; width: 150px;">Ziel </th>
+        <td>
+          
+            <p>da) Väterbeteiligung beim Elterngeld: Anstieg auf 65 Prozent bis 2030<br />db) Väteranteil an den genommenen Elterngeldmonaten: Anstieg auf 12 Prozent bis 2030</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -2394,26 +2414,6 @@ data-event-label="Change to indicator.sources tab"
       
         
           
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
   
   
@@ -4241,12 +4241,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/site/assets/js/sdg.js?v=20240412104840'></script>
+<script src='/site/assets/js/sdg.js?v=20240412110145'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20240412104840"></script><script>
+    <script src="/site/assets/js/custom.js?v=20240412110145"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
