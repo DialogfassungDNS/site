@@ -3,7 +3,10 @@
     {% for tab in site.metadata_tabs %}
 
     {% if tab.scope == 'proposal' and page.indicator.dialogue == 'old' %}
+      {% assign loop = 'first'}
       {% continue %}
+    {% else %}
+      {% assign loop = 'notfirst'}
     {% endif %}
 
     {% if tab.scope %}
@@ -26,7 +29,7 @@
     {% endif %}
 
 
-    <div role="tabpanel" class="tab-pane {% if forloop.first %}active{% endif %}" id="{{ tab_key }}">
+    <div role="tabpanel" class="tab-pane {% if forloop.first or loop == 'first' %}active{% endif %}" id="{{ tab_key }}">
       <article>
         {% if tab_description %}
           {{ tab_description | t | markdownify }}
