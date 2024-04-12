@@ -7,11 +7,9 @@
         {% endif %}
         {% if tab_key == 'national' and page.indicator.dialogue == 'new' %}
             {% continue %}
-        {% endif %}
-        {% if tab_key == 'proposal' and page.indicator.dialogue == 'old' %}
+        {% elsif tab_key == 'proposal' and page.indicator.dialogue == 'old' %}
             {% continue %}
-        {% endif %}
-        {% if tab_key == 'proposal' and page.indicator.dialogue == 'deleted' %}
+        {% elsif tab_key == 'proposal' and page.indicator.dialogue == 'deleted' %}
             {% continue %}
         {% endif %}
         {% assign tab_preset = "tab_meta_" | append: tab_key %}
