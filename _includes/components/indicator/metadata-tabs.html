@@ -5,7 +5,7 @@
             {% assign tab_key = tab.scope %}
             {% assign tab_obj = tab %}
         {% endif %}
-        {% if tab_key == 'global' and page.indicator.standalone %}
+        {% if tab_key == 'national' and page.indicator.dialogue == 'new' %}
             {% continue %}
         {% endif %}
         {% assign tab_preset = "tab_meta_" | append: tab_key %}

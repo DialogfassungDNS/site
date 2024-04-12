@@ -11,6 +11,7 @@
         {% assign tab_description = page.indicator.meta_blurb | default: '' %}
       {% endif %}
     {% endif %}
+
     {% assign tab_include = 'components/indicator/metadata.html' %}
     {% if tab_key == 'sources' %}
       {% assign tab_include = 'components/indicator/sources.html' %}
@@ -18,7 +19,7 @@
     {% elsif tab_key == 'history_1'  %}
       {% assign tab_include = 'components/indicator/history.html' %}
     {% endif %}
-    {% unless tab_key == 'national' and page.indicator.dialogue == 'new' %}
+
 
     <div role="tabpanel" class="tab-pane {% if forloop.first %}active{% endif %}" id="{{ tab_key }}">
       <article>
@@ -28,7 +29,6 @@
         {% include {{ tab_include }} scope=tab_key %}
       </article>
     </div>
-    {% endunless %}
     {% endfor %}
   {% else %}
     {% include components/indicator/metadata-panes-default.html %}
