@@ -10,10 +10,10 @@
         {% endif %}
         {% assign tab_preset = "tab_meta_" | append: tab_key %}
         {% assign tab_label = "Change to " | append: tab_obj.title | append: " tab" %}
-        <li role="presentation" class="nav-item">
+        <li role="presentation" class="nav-item-custom">
             <button
                 type="button"
-                class="nav-link {% if forloop.first %}active{% endif %} {% if tab_key == 'proposal' %}goal-{{ page.goal.number }}{% endif %}"
+                class="nav-link{% if tab_key == 'proposal' %}-custom goal-{{ page.goal.number }}{% endif %} {% if forloop.first %}active{% endif %} "
                 data-bs-toggle="tab"
                 id="tab-{{ tab_key }}"
                 data-bs-target="#{{ tab_key }}"
