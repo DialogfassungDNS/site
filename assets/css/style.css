@@ -3226,7 +3226,7 @@ body {
 .goal-1.navigation-btn:hover {
   background-color: #c51829; }
 .goal-1.nav-link {
-  background-color: #c51829; }
+  color: #c51829; }
 
 .goal-2.goal-banner {
   background-color: white; }
@@ -3257,7 +3257,7 @@ body {
 .goal-2.navigation-btn:hover {
   background-color: #c28c22; }
 .goal-2.nav-link {
-  background-color: #c28c22; }
+  color: #c28c22; }
 
 .goal-3.goal-banner {
   background-color: white; }
@@ -3288,7 +3288,7 @@ body {
 .goal-3.navigation-btn:hover {
   background-color: #3a792b; }
 .goal-3.nav-link {
-  background-color: #3a792b; }
+  color: #3a792b; }
 
 .goal-4.goal-banner {
   background-color: white; }
@@ -3319,7 +3319,7 @@ body {
 .goal-4.navigation-btn:hover {
   background-color: #981a25; }
 .goal-4.nav-link {
-  background-color: #981a25; }
+  color: #981a25; }
 
 .goal-5.goal-banner {
   background-color: white; }
@@ -3350,7 +3350,7 @@ body {
 .goal-5.navigation-btn:hover {
   background-color: #f01c00; }
 .goal-5.nav-link {
-  background-color: #f01c00; }
+  color: #f01c00; }
 
 .goal-6.goal-banner {
   background-color: white; }
@@ -3381,7 +3381,7 @@ body {
 .goal-6.navigation-btn:hover {
   background-color: #1a9bbc; }
 .goal-6.nav-link {
-  background-color: #1a9bbc; }
+  color: #1a9bbc; }
 
 .goal-7.goal-banner {
   background-color: white; }
@@ -3412,7 +3412,7 @@ body {
 .goal-7.navigation-btn:hover {
   background-color: #d1a103; }
 .goal-7.nav-link {
-  background-color: #d1a103; }
+  color: #d1a103; }
 
 .goal-8.goal-banner {
   background-color: white; }
@@ -3443,7 +3443,7 @@ body {
 .goal-8.navigation-btn:hover {
   background-color: #761230; }
 .goal-8.nav-link {
-  background-color: #761230; }
+  color: #761230; }
 
 .goal-9.goal-banner {
   background-color: white; }
@@ -3474,7 +3474,7 @@ body {
 .goal-9.navigation-btn:hover {
   background-color: #ed4c02; }
 .goal-9.nav-link {
-  background-color: #ed4c02; }
+  color: #ed4c02; }
 
 .goal-10.goal-banner {
   background-color: white; }
@@ -3505,7 +3505,7 @@ body {
 .goal-10.navigation-btn:hover {
   background-color: #ae0f51; }
 .goal-10.nav-link {
-  background-color: #ae0f51; }
+  color: #ae0f51; }
 
 .goal-11.goal-banner {
   background-color: white; }
@@ -3536,7 +3536,7 @@ body {
 .goal-11.navigation-btn:hover {
   background-color: #ef8402; }
 .goal-11.nav-link {
-  background-color: #ef8402; }
+  color: #ef8402; }
 
 .goal-12.goal-banner {
   background-color: white; }
@@ -3567,7 +3567,7 @@ body {
 .goal-12.navigation-btn:hover {
   background-color: #966d24; }
 .goal-12.nav-link {
-  background-color: #966d24; }
+  color: #966d24; }
 
 .goal-13.goal-banner {
   background-color: white; }
@@ -3598,7 +3598,7 @@ body {
 .goal-13.navigation-btn:hover {
   background-color: #305b33; }
 .goal-13.nav-link {
-  background-color: #305b33; }
+  color: #305b33; }
 
 .goal-14.goal-banner {
   background-color: white; }
@@ -3629,7 +3629,7 @@ body {
 .goal-14.navigation-btn:hover {
   background-color: #0874a7; }
 .goal-14.nav-link {
-  background-color: #0874a7; }
+  color: #0874a7; }
 
 .goal-15.goal-banner {
   background-color: white; }
@@ -3660,7 +3660,7 @@ body {
 .goal-15.navigation-btn:hover {
   background-color: #449525; }
 .goal-15.nav-link {
-  background-color: #449525; }
+  color: #449525; }
 
 .goal-16.goal-banner {
   background-color: white; }
@@ -3691,7 +3691,7 @@ body {
 .goal-16.navigation-btn:hover {
   background-color: #004669; }
 .goal-16.nav-link {
-  background-color: #004669; }
+  color: #004669; }
 
 .goal-17.goal-banner {
   background-color: white; }
@@ -3722,7 +3722,7 @@ body {
 .goal-17.navigation-btn:hover {
   background-color: #132e43; }
 .goal-17.nav-link {
-  background-color: #132e43; }
+  color: #132e43; }
 
 .smaller {
   font-size: 10px; }
@@ -3851,3 +3851,36 @@ abbr[title]:focus::after {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   padding-top: 10px; }
+
+#main-content .nav-tabs {
+  border-bottom: 1px solid #888; }
+  #main-content .nav-tabs .nav-item {
+    padding: 10px 15px;
+    margin-right: 2px;
+    background-color: #eeeeee;
+    border-radius: 4px 4px 0 0; }
+    #main-content .nav-tabs .nav-item button {
+      display: inline-block;
+      padding: 0;
+      border: none;
+      margin-right: 0;
+      text-decoration: underline;
+      color: #0b0c0c; }
+    #main-content .nav-tabs .nav-item.active {
+      background-color: white;
+      border: 1px solid #888;
+      border-bottom: 0;
+      margin-bottom: -1px; }
+      #main-content .nav-tabs .nav-item.active button {
+        border: none;
+        text-decoration: none; }
+    #main-content .nav-tabs .nav-item:not(.active) {
+      border: 1px solid #eeeeee;
+      padding-bottom: 8px;
+      cursor: pointer; }
+#main-content .tab-content {
+  border: 1px solid #888;
+  padding: 15px;
+  border-top: 0; }
+  #main-content .tab-content .tab-pane {
+    padding-top: 1.5rem; }
