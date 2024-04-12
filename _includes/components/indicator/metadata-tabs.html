@@ -10,17 +10,18 @@
         {% endif %}
         {% assign tab_preset = "tab_meta_" | append: tab_key %}
         {% assign tab_label = "Change to " | append: tab_obj.title | append: " tab" %}
-        <li role="presentation" class="nav-item {% if tab_key == 'proposal' %}custom goal-{{ page.goal.number }}{% endif %} ">
+        <li role="presentation" class="nav-item">
             <button
                 type="button"
-                class="nav-link {% if tab_key == 'proposal' %}custom goal-{{ page.goal.number }}{% endif %} {% if forloop.first %}active{% endif %} "
+                class="nav-link {% if forloop.first %}active{% endif %} "
                 data-bs-toggle="tab"
                 id="tab-{{ tab_key }}"
                 data-bs-target="#{{ tab_key }}"
                 aria-controls="{{ tab_key }}"
                 role="tab"
                 {% include autotrack.html preset=tab_preset category="Tab change" action="Change metadata view" label=tab_label %}
-                style="color: #{{ page.indicator.color}};">{{ tab_obj.title | t }}</button>
+                {% if tab_key == 'proposal' %}style="color: #{{ page.indicator.color}};"{% endif %}
+                >{{ tab_obj.title | t }}</button>
         </li>
     {% endfor %}
     {% else %}
