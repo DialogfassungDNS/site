@@ -152,7 +152,7 @@ metadata_tabs:
     description: ''
   - scope: national
     title: indicator.details
-    description: 'Die Angaben zu Definition und Ziel des Indikators stammen aus dem Indikatorenbericht 2022.'
+    description: 'Die Angaben zu Definition und Ziel des Indikators stammen aus dem <a href="https://dns-indikatoren.de/assets/Publikationen/Indikatorenberichte/2022.pdf">Indikatorenbericht 2022</a>.'
 
   # - scope: content
   #   title: indicator.contentAndProgress
