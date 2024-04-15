@@ -1,14 +1,25 @@
 <div class="tab-content">
   {% if site.metadata_tabs and site.metadata_tabs.size > 0 %}
     {% for tab in site.metadata_tabs %}
+
+    {% if tab.scope == 'proposal' and page.indicator.dialogue == 'old' %}
+      {% assign loop = 'first' %}
+      {% continue %}
+    {% else %}
+      {% assign loop = 'notfirst' %}
+    {% endif %}
+
     {% if tab.scope %}
       {% assign tab_key = tab.scope %}
       {% assign tab_obj = tab %}
     {% endif %}
     <!-- {% assign tab_description = tab_obj.description | default: tab_obj.blurb %} -->
     {% if page.indicator.meta_blurb %}
+      {% if tab.scope == "proposal" %}
         {% assign tab_description = page.indicator.meta_blurb | default: '' %}
+      {% endif %}
     {% endif %}
+
     {% assign tab_include = 'components/indicator/metadata.html' %}
     {% if tab_key == 'sources' %}
       {% assign tab_include = 'components/indicator/sources.html' %}
@@ -16,7 +27,9 @@
     {% elsif tab_key == 'history_1'  %}
       {% assign tab_include = 'components/indicator/history.html' %}
     {% endif %}
-    <div role="tabpanel" class="tab-pane {% if forloop.first %}active{% endif %}" id="{{ tab_key }}">
+
+
+    <div role="tabpanel" class="tab-pane {% if forloop.first or loop == 'first' %}active{% endif %}" id="{{ tab_key }}">
       <article>
         {% if tab_description %}
           {{ tab_description | t | markdownify }}
