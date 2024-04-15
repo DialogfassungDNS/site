@@ -3,10 +3,10 @@
     {% for tab in site.metadata_tabs %}
 
     {% if tab.scope == 'proposal' and page.indicator.dialogue == 'old' %}
-      {% assign loop = 'first'}
+      {% assign loop = 'first' %}
       {% continue %}
     {% else %}
-      {% assign loop = 'notfirst'}
+      {% assign loop = 'notfirst' %}
     {% endif %}
 
     {% if tab.scope %}
