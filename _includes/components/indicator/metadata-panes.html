@@ -5,6 +5,9 @@
     {% if tab.scope == 'proposal' and page.indicator.dialogue == 'old' %}
       {% assign loop = 'first' %}
       {% continue %}
+    {% elsif tab.scope == 'proposal' and page.indicator.dialogue == 'deleted' %}
+      {% assign loop = 'first' %}
+      {% continue %}
     {% else %}
       {% assign loop = 'notfirst' %}
     {% endif %}
