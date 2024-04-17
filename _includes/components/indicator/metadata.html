@@ -1,4 +1,4 @@
-<table class="table" style="width:100%; table-layout: fixed; {% if page.indicator.dialogue == "old" or page.indicator.dialogue == "deleted" and include.scope != "national" %} color: grey; {% endif %}">
+<table class="table" style="width:100%; table-layout: fixed; {% if page.indicator.dialogue == "old" or page.indicator.dialogue == "deleted" %} color: grey; {% endif %}">
   <tbody>
   {% for indicator_metadata in site.data.schema %}
     {%- assign metadata_label = indicator_metadata.name | translate_metadata_field -%}
@@ -20,7 +20,7 @@
         {% endif %}
       {% endunless %}
       {% unless indicator_metadata.name contains "_url_text" or indicator_metadata.name contains "_link_text" or indicator_metadata.name contains "_short" %}
-      <tr>
+      <tr {% if page.indicator.dialogue == "old" or page.indicator.dialogue == "deleted" and indicator_metadata.field.scope == "national" %}style="color: black"{% endif %}>
         <th scope="row" style="text-align: left; width: 150px;">{{ metadata_label }} </th>
         <td>
           {% if indicator_metadata.name contains "_url" or indicator_metadata.name contains "_link" %}
