@@ -16,7 +16,7 @@
         {% else %}
           {% assign tab_preset = "tab_meta_" | append: tab_key %}
           {% assign tab_label = "Change to " | append: tab_obj.title | append: " tab" %}
-          <li role="presentation" class="nav-item">
+          <li role="presentation" class="nav-item" {{ page.indicator.indicator }}>
               <button
                   type="button"
                   class="nav-link {% if forloop.first %}active{% endif %} "
