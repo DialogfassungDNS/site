@@ -5,10 +5,8 @@
             {% assign tab_key = tab.scope %}
             {% assign tab_obj = tab %}
         {% endif %}
-        {% if tab_key == 'national' and page.indicator.dialogue == 'new' %}
-            {% unless page.indicator.indicator_sort_order == '12-3-abc' %}
-              {% continue %}
-            {% endunless %}
+        {% if tab_key == 'national' and page.indicator.dialogue == 'new'and page.indicator.indicator_sort_order != '12-3-abc' %}
+            {% continue %}
         {% elsif tab_key == 'proposal' and page.indicator.dialogue == 'old' %}
             {% continue %}
         {% elsif tab_key == 'proposal' and page.indicator.dialogue == 'deleted' %}
@@ -16,7 +14,7 @@
         {% else %}
           {% assign tab_preset = "tab_meta_" | append: tab_key %}
           {% assign tab_label = "Change to " | append: tab_obj.title | append: " tab" %}
-          <li role="presentation" class="nav-item" {{ page.indicator.indicator }}>
+          <li role="presentation" class="nav-item">
               <button
                   type="button"
                   class="nav-link {% if forloop.first %}active{% endif %} "
