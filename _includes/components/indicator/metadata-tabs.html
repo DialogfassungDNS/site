@@ -6,7 +6,7 @@
             {% assign tab_obj = tab %}
         {% endif %}
         {% if tab_key == 'national' and page.indicator.dialogue == 'new' %}
-            {% unless page.indicator.indicator == indicator: '12.3.abc' %}
+            {% unless page.indicator.indicator == '12.3.abc' %}
               {% continue %}
             {% endunless %}
         {% elsif tab_key == 'proposal' and page.indicator.dialogue == 'old' %}
