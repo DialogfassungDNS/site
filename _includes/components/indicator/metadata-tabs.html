@@ -5,7 +5,7 @@
             {% assign tab_key = tab.scope %}
             {% assign tab_obj = tab %}
         {% endif %}
-        {% if tab_key == 'national' and page.indicator.dialogue == 'new' %}
+        {% if tab_key == 'national' and page.indicator.dialogue == 'new'and page.indicator.indicator_sort_order != '12-3-abc' %}
             {% continue %}
         {% elsif tab_key == 'proposal' and page.indicator.dialogue == 'old' %}
             {% continue %}
